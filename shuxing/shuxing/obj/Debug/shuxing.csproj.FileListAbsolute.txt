@@ -1,0 +1,5 @@
+E:\c#\programing\shuxing\shuxing\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\shuxing\shuxing\bin\Debug\shuxing.exe
+E:\c#\programing\shuxing\shuxing\bin\Debug\shuxing.pdb
+E:\c#\programing\shuxing\shuxing\obj\Debug\shuxing.exe
+E:\c#\programing\shuxing\shuxing\obj\Debug\shuxing.pdb

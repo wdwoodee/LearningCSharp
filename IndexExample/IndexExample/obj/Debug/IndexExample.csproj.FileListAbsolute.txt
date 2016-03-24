@@ -1,0 +1,5 @@
+E:\c#\programing\IndexExample\IndexExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\IndexExample\IndexExample\bin\Debug\IndexExample.exe
+E:\c#\programing\IndexExample\IndexExample\bin\Debug\IndexExample.pdb
+E:\c#\programing\IndexExample\IndexExample\obj\Debug\IndexExample.exe
+E:\c#\programing\IndexExample\IndexExample\obj\Debug\IndexExample.pdb

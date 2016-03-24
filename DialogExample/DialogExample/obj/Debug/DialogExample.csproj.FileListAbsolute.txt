@@ -1,0 +1,9 @@
+E:\c#\programing\DialogExample\DialogExample\bin\Debug\DialogExample.exe
+E:\c#\programing\DialogExample\DialogExample\bin\Debug\DialogExample.pdb
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\DialogExample.DialogForm.resources
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\DialogExample.MainForm.resources
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\DialogExample.Properties.Resources.resources
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\DialogExample.csproj.GenerateResource.Cache
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\DialogExample.exe
+E:\c#\programing\DialogExample\DialogExample\obj\Debug\DialogExample.pdb

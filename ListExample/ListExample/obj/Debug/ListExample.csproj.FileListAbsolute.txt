@@ -1,0 +1,5 @@
+E:\c#\programing\ListExample\ListExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\ListExample\ListExample\bin\Debug\ListExample.exe
+E:\c#\programing\ListExample\ListExample\bin\Debug\ListExample.pdb
+E:\c#\programing\ListExample\ListExample\obj\Debug\ListExample.exe
+E:\c#\programing\ListExample\ListExample\obj\Debug\ListExample.pdb

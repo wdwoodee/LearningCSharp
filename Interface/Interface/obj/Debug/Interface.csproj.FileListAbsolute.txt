@@ -1,0 +1,5 @@
+E:\c#\programing\Interface\Interface\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\Interface\Interface\bin\Debug\Interface.exe
+E:\c#\programing\Interface\Interface\bin\Debug\Interface.pdb
+E:\c#\programing\Interface\Interface\obj\Debug\Interface.exe
+E:\c#\programing\Interface\Interface\obj\Debug\Interface.pdb

@@ -1,0 +1,9 @@
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\FormPositionExample.Form1.resources
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\FormPositionExample.Form2.resources
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\FormPositionExample.Properties.Resources.resources
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\FormPositionExample.csproj.GenerateResource.Cache
+E:\c#\programing\FormPositionExample\FormPositionExample\bin\Debug\FormPositionExample.exe
+E:\c#\programing\FormPositionExample\FormPositionExample\bin\Debug\FormPositionExample.pdb
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\FormPositionExample.exe
+E:\c#\programing\FormPositionExample\FormPositionExample\obj\Debug\FormPositionExample.pdb

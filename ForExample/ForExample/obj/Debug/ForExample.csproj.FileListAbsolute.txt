@@ -1,0 +1,5 @@
+E:\c#\programing\ForExample\ForExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\ForExample\ForExample\bin\Debug\ForExample.exe
+E:\c#\programing\ForExample\ForExample\bin\Debug\ForExample.pdb
+E:\c#\programing\ForExample\ForExample\obj\Debug\ForExample.exe
+E:\c#\programing\ForExample\ForExample\obj\Debug\ForExample.pdb

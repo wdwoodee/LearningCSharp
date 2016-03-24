@@ -1,0 +1,10 @@
+E:\c#\programing\WinFormExample\WinFormExample\bin\Debug\WinFormExample.exe
+E:\c#\programing\WinFormExample\WinFormExample\bin\Debug\WinFormExample.pdb
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.MainForm.resources
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.Properties.Resources.resources
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.SubForm.resources
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.csproj.GenerateResource.Cache
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.exe
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.pdb
+E:\c#\programing\WinFormExample\WinFormExample\obj\Debug\WinFormExample.WelcomeForm.resources

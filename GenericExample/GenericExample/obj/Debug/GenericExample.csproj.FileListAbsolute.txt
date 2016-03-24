@@ -1,0 +1,5 @@
+E:\c#\programing\GenericExample\GenericExample\bin\Debug\GenericExample.exe
+E:\c#\programing\GenericExample\GenericExample\bin\Debug\GenericExample.pdb
+E:\c#\programing\GenericExample\GenericExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\GenericExample\GenericExample\obj\Debug\GenericExample.exe
+E:\c#\programing\GenericExample\GenericExample\obj\Debug\GenericExample.pdb

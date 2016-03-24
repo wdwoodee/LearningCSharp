@@ -1,0 +1,5 @@
+E:\c#\programing\FileSize\FileSize\bin\Debug\FileSize.exe
+E:\c#\programing\FileSize\FileSize\bin\Debug\FileSize.pdb
+E:\c#\programing\FileSize\FileSize\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\FileSize\FileSize\obj\Debug\FileSize.exe
+E:\c#\programing\FileSize\FileSize\obj\Debug\FileSize.pdb

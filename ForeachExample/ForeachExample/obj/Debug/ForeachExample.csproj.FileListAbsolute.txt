@@ -1,0 +1,5 @@
+E:\c#\programing\ForeachExample\ForeachExample\bin\Debug\ForeachExample.exe
+E:\c#\programing\ForeachExample\ForeachExample\bin\Debug\ForeachExample.pdb
+E:\c#\programing\ForeachExample\ForeachExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\ForeachExample\ForeachExample\obj\Debug\ForeachExample.exe
+E:\c#\programing\ForeachExample\ForeachExample\obj\Debug\ForeachExample.pdb

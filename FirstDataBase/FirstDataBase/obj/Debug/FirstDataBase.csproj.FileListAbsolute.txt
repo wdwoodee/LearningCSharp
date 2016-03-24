@@ -1,0 +1,7 @@
+E:\c#\programing\FirstDataBase\FirstDataBase\bin\Debug\Database1.mdf
+E:\c#\programing\FirstDataBase\FirstDataBase\bin\Debug\Database1_log.ldf
+E:\c#\programing\FirstDataBase\FirstDataBase\bin\Debug\FirstDataBase.exe
+E:\c#\programing\FirstDataBase\FirstDataBase\bin\Debug\FirstDataBase.pdb
+E:\c#\programing\FirstDataBase\FirstDataBase\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\FirstDataBase\FirstDataBase\obj\Debug\FirstDataBase.exe
+E:\c#\programing\FirstDataBase\FirstDataBase\obj\Debug\FirstDataBase.pdb

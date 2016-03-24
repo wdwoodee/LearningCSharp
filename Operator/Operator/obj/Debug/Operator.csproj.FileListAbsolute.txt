@@ -1,0 +1,8 @@
+E:\c#\programing\Operator\Operator\bin\Debug\Operator.exe
+E:\c#\programing\Operator\Operator\bin\Debug\Operator.pdb
+E:\c#\programing\Operator\Operator\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\Operator\Operator\obj\Debug\Operator.Form1.resources
+E:\c#\programing\Operator\Operator\obj\Debug\Operator.Properties.Resources.resources
+E:\c#\programing\Operator\Operator\obj\Debug\Operator.csproj.GenerateResource.Cache
+E:\c#\programing\Operator\Operator\obj\Debug\Operator.exe
+E:\c#\programing\Operator\Operator\obj\Debug\Operator.pdb

@@ -1,0 +1,8 @@
+E:\c#\programing\Login\Login\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\Login\Login\obj\Debug\Login.Form1.resources
+E:\c#\programing\Login\Login\obj\Debug\Login.Properties.Resources.resources
+E:\c#\programing\Login\Login\obj\Debug\Login.csproj.GenerateResource.Cache
+E:\c#\programing\Login\Login\bin\Debug\Login.exe
+E:\c#\programing\Login\Login\bin\Debug\Login.pdb
+E:\c#\programing\Login\Login\obj\Debug\Login.exe
+E:\c#\programing\Login\Login\obj\Debug\Login.pdb

@@ -1,0 +1,5 @@
+E:\c#\programing\RandomExample\RandomExample\bin\Debug\RandomExample.exe
+E:\c#\programing\RandomExample\RandomExample\bin\Debug\RandomExample.pdb
+E:\c#\programing\RandomExample\RandomExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\RandomExample\RandomExample\obj\Debug\RandomExample.exe
+E:\c#\programing\RandomExample\RandomExample\obj\Debug\RandomExample.pdb

@@ -1,0 +1,5 @@
+E:\c#\programing\ClassStructExample\ClassStructExample\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\ClassStructExample\ClassStructExample\bin\Debug\ClassStructExample.exe
+E:\c#\programing\ClassStructExample\ClassStructExample\bin\Debug\ClassStructExample.pdb
+E:\c#\programing\ClassStructExample\ClassStructExample\obj\Debug\ClassStructExample.exe
+E:\c#\programing\ClassStructExample\ClassStructExample\obj\Debug\ClassStructExample.pdb
