@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<bookshop>
+  <book genre="fantasy" ISBN="2-2312-2">
+    <title>CSS禅2</title>
+    <author>Jeff</author>
+    <price>58.3</price>
+  </book>
+  <book>
+  </book>
+  <book genre="dwang" ISBN="2-3631-4">
+    <title>CSS禅</title>
+    <author>Jeff</author>
+    <price>58.3</price>
+  </book>
+</bookshop>
