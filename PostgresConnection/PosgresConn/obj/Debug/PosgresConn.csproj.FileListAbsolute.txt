@@ -14,3 +14,6 @@ E:\c#\programing\PosgresConn\PostgresConnection\PosgresConn\bin\Debug\PosgresCon
 E:\c#\programing\PosgresConn\PostgresConnection\PosgresConn\bin\Debug\Mono.Security.dll
 E:\c#\programing\PosgresConn\PostgresConnection\PosgresConn\bin\Debug\Npgsql.dll
 E:\c#\programing\PosgresConn\PostgresConnection\PosgresConn\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\programing\PostgresConnection\PosgresConn\bin\Debug\PosgresConn.exe.config
+E:\c#\programing\PostgresConnection\PosgresConn\obj\Debug\PosgresConn.exe
+E:\c#\programing\PostgresConnection\PosgresConn\obj\Debug\PosgresConn.pdb

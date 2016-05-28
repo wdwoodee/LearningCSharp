@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace FirstSql
+namespace SQLConnection
 {
     class Program
     {
@@ -20,7 +20,7 @@ namespace FirstSql
                 AppDomain.CurrentDomain.SetData("DataDirectory", dataDir);
             }
             string connString = ConfigurationManager.ConnectionStrings["connectString"].ConnectionString;
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\DBTest.mdf;Integrated Security=True");
             //using(SqlConnection conn = new SqlConnection(connString))
             //{
             //    conn.Open();
@@ -72,16 +72,16 @@ namespace FirstSql
                 conn.Open();
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "select count(*) from T_User where UserName = '" + userName + "'" + "and Password='" +password+"'";
+                    cmd.CommandText = "select count(*) from T_User where UserName = '" + userName + "'" + "and Password='" + password + "'";
                     int i = Convert.ToInt32(cmd.ExecuteScalar());
-                    if(i > 0)
+                    if (i > 0)
                     {
-                           Console.WriteLine("Login sucessfully.");
+                        Console.WriteLine("Login sucessfully.");
                     }
                     else
                     {
                         Console.WriteLine("Username or assword is wrong, please check again.");
-                    }     
+                    }
                 }
             }
 
