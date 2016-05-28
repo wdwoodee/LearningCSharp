@@ -1,0 +1,6 @@
+D:\Github\CSharpTest\FileTest\FileTest\bin\Debug\FileTest.exe.config
+D:\Github\CSharpTest\FileTest\FileTest\bin\Debug\FileTest.exe
+D:\Github\CSharpTest\FileTest\FileTest\bin\Debug\FileTest.pdb
+D:\Github\CSharpTest\FileTest\FileTest\obj\Debug\FileTest.exe
+D:\Github\CSharpTest\FileTest\FileTest\obj\Debug\FileTest.pdb
+D:\Github\CSharpTest\FileTest\FileTest\obj\Debug\FileTest.csprojResolveAssemblyReference.cache
