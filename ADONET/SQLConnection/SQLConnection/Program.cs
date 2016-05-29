@@ -20,6 +20,8 @@ namespace SQLConnection
                 AppDomain.CurrentDomain.SetData("DataDirectory", dataDir);
             }
             string connString = ConfigurationManager.ConnectionStrings["connectString"].ConnectionString;
+
+            #region executenonquery
             //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\DBTest.mdf;Integrated Security=True");
             //using(SqlConnection conn = new SqlConnection(connString))
             //{
@@ -32,12 +34,14 @@ namespace SQLConnection
             //    }
             //}
             //Console.WriteLine("DataBase connection success!");
+            #endregion
 
             Console.WriteLine("Please input username:");
             string userName = Console.ReadLine();
             Console.WriteLine("Please input password:");
             string password = Console.ReadLine();
 
+            #region sqldatareader
             //using (SqlConnection conn = new SqlConnection(connString))
             //{
             //    conn.Open();
@@ -66,13 +70,37 @@ namespace SQLConnection
             //            }
             //        }
             //    }
+            #endregion
 
+            #region executescalar
+            //using (SqlConnection conn = new SqlConnection(connString))
+            //{
+            //    conn.Open();
+            //    using (SqlCommand cmd = conn.CreateCommand())
+            //    {
+            //        cmd.CommandText = "select count(*) from T_User where UserName = '" + userName + "'" + "and Password='" + password + "'";
+            //        int i = Convert.ToInt32(cmd.ExecuteScalar());
+            //        if (i > 0)
+            //        {
+            //            Console.WriteLine("Login sucessfully.");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Username or assword is wrong, please check again.");
+            //        }
+            //    }
+            //}
+            #endregion
+
+            #region parameter
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "select count(*) from T_User where UserName = '" + userName + "'" + "and Password='" + password + "'";
+                    cmd.CommandText = "select count(*) from T_User where UserName =@un and password=@pwd";
+                    cmd.Parameters.Add(new SqlParameter("un", userName));
+                    cmd.Parameters.Add(new SqlParameter("pwd", password));
                     int i = Convert.ToInt32(cmd.ExecuteScalar());
                     if (i > 0)
                     {
@@ -83,7 +111,8 @@ namespace SQLConnection
                         Console.WriteLine("Username or assword is wrong, please check again.");
                     }
                 }
-            }
+            
+#endregion
 
             Console.ReadKey();
         }
