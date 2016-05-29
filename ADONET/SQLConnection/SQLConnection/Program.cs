@@ -111,8 +111,9 @@ namespace SQLConnection
                         Console.WriteLine("Username or assword is wrong, please check again.");
                     }
                 }
+            }
             
-#endregion
+            #endregion
 
             Console.ReadKey();
         }
