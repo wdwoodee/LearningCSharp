@@ -2,6 +2,5 @@ E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Te
 E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.pdb
 E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Newtonsoft.Json.dll
 E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Newtonsoft.Json.xml
-E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.csprojResolveAssemblyReference.cache
 E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.dll
 E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.pdb
