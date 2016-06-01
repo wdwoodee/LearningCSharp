@@ -1,0 +1,17 @@
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.dll
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.pdb
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.dll
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.pdb
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.pdb
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.pdb
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Newtonsoft.Json.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Newtonsoft.Json.xml
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.csprojResolveAssemblyReference.cache
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\TestTools.Common.Utility.pdb
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Newtonsoft.Json.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Common.Utility\bin\Debug\Newtonsoft.Json.xml
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Common.Utility\obj\Debug\TestTools.Common.Utility.pdb

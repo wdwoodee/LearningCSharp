@@ -1,0 +1,26 @@
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.dll
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.pdb
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.dll
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.pdb
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.dll
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.dll
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.xml
+G:\AutoTest\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.xml
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.pdb
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.xml
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.xml
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.dll
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.pdb
+D:\Source Code\NetBrain.TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.csprojResolveAssemblyReference.cache
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.pdb
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.xml
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.xml
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.dll
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.pdb
+D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.csprojResolveAssemblyReference.cache

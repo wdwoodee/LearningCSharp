@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF7D85D6-C850-46A5-A64F-BFCA039A489E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestToos.BLL.Common</RootNamespace>
+    <AssemblyName>TestToos.BLL.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompareDevices.cs" />
+    <Compile Include="CompareJson.cs" />
+    <Compile Include="CompareSysDG.cs" />
+    <Compile Include="ExportFromMongoDB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestTools.Common.Utility\TestTools.Common.Utility.csproj">
+      <Project>{05fe1e69-a779-4aab-9d32-a6d732bb537e}</Project>
+      <Name>TestTools.Common.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestTools.DAL.DataModules\TestTools.DAL.DataModules.csproj">
+      <Project>{81be32de-6bc4-445c-ab1d-400cde1b7af7}</Project>
+      <Name>TestTools.DAL.DataModules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestTools.DAL.MongoDB\TestTools.DAL.MongoDB.csproj">
+      <Project>{9790e25b-7810-42af-8fe5-cd8ce547e920}</Project>
+      <Name>TestTools.DAL.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestTools.Postgres\TestTools.Postgres.csproj">
+      <Project>{6b6c736f-b014-4e9a-8224-fde29ad96938}</Project>
+      <Name>TestTools.Postgres</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
