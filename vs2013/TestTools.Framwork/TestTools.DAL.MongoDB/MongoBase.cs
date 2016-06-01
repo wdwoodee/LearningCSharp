@@ -98,7 +98,7 @@ namespace TestTools.DAL.MongoDB
     }
     #endregion
 
-    #region Class NetbrainDB
+    #region Class MongoDB
     public class MongoDB : MongoBase
     {
         #region Veriable
