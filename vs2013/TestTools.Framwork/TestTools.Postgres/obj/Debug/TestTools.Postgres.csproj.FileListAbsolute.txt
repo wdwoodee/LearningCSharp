@@ -18,3 +18,10 @@ D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Postgres\bin\Debug\
 D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Postgres\obj\Debug\TestTools.Postgres.dll
 D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Postgres\obj\Debug\TestTools.Postgres.pdb
 D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.Postgres\obj\Debug\TestTools.Postgres.csprojResolveAssemblyReference.cache
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\bin\Debug\TestTools.Postgres.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\bin\Debug\TestTools.Postgres.pdb
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\bin\Debug\Npgsql.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\bin\Debug\Npgsql.xml
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\obj\Debug\TestTools.Postgres.csprojResolveAssemblyReference.cache
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\obj\Debug\TestTools.Postgres.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.Postgres\obj\Debug\TestTools.Postgres.pdb

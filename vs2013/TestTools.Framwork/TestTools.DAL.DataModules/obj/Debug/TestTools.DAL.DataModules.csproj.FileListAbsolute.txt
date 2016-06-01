@@ -24,3 +24,12 @@ D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin
 D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.dll
 D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.pdb
 D:\Github\LearningCSharp\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.csprojResolveAssemblyReference.cache
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\TestTools.DAL.DataModules.pdb
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\MongoDB.Bson.xml
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\bin\Debug\Newtonsoft.Json.xml
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.csprojResolveAssemblyReference.cache
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.dll
+E:\c#\programing\vs2013\TestTools.Framwork\TestTools.DAL.DataModules\obj\Debug\TestTools.DAL.DataModules.pdb
