@@ -16,12 +16,12 @@ namespace TestTools.DAL.MongoDB
     {
         private string strDbName = string.Empty;
         private string strDtName = string.Empty;
-        NetBrainDB collectionCurrConfig;
+        MongoDB collectionCurrConfig;
         public CurrConfig()
         {
             strDbName = ConfigurationManager.AppSettings["DBName"];
             strDtName = "CurrConfig";
-            collectionCurrConfig = new NetBrainDB(strDbName, strDtName);
+            collectionCurrConfig = new MongoDB(strDbName, strDtName);
         }
         public List<NgCurrConfig> GetAllConfig()
         {

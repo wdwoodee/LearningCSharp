@@ -106,14 +106,14 @@ namespace TestTools.DAL.MongoDB
     #endregion
 
     #region Class NetbrainDB
-    public class NetBrainDB : MongoBase
+    public class MongoDB : MongoBase
     {
         #region Veriable
         protected MongoCollection mongoCollection = null;
         #endregion
 
         #region Constructor
-        public NetBrainDB(string dbName, string collectionName)
+        public MongoDB(string dbName, string collectionName)
             : base(dbName)
         {
             mongoCollection = mongoDatabase.GetCollection<BsonDocument>(collectionName);
@@ -121,7 +121,7 @@ namespace TestTools.DAL.MongoDB
         #endregion
 
         #region Destructor
-        ~NetBrainDB()
+        ~MongoDB()
         {
         }
         #endregion

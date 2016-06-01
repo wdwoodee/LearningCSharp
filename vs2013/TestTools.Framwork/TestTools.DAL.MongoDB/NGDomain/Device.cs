@@ -14,12 +14,12 @@ namespace TestTools.DAL.MongoDB
     {
         private string strDbName = string.Empty;
         private string strDtName = string.Empty;
-        NetBrainDB collectionDevice;
+        MongoDB collectionDevice;
         public Device()
         {
             strDbName = ConfigurationManager.AppSettings["DBName"];
             strDtName = "Device";
-            collectionDevice = new NetBrainDB(strDbName, strDtName);
+            collectionDevice = new MongoDB(strDbName, strDtName);
         }
         public List<NgDevice> GetAllDevice()
         {
