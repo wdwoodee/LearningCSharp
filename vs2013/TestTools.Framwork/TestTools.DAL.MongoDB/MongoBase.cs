@@ -1,11 +1,4 @@
-﻿/*********************************************************
-
- * File Name: MongoBase
- * Description:创建数据连接，完成增删改查等功能
- * Author：DWang
- * Revision History: 2015/11/2 修改Insert, Update, Delete等函数的返回类型
-*********************************************************/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
