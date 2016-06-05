@@ -1,0 +1,11 @@
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\bin\Debug\ExportImportData.exe.config
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\bin\Debug\IEDataBase.mdf
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\bin\Debug\IEDataBase_log.ldf
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\bin\Debug\ExportImportData.exe
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\bin\Debug\ExportImportData.pdb
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.Properties.Resources.resources
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.csproj.GenerateResource.Cache
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.exe
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.pdb
+E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.ImportExportTest.resources
