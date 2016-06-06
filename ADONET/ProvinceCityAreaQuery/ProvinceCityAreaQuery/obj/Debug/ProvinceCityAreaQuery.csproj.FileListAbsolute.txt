@@ -1,0 +1,11 @@
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\bin\Debug\ProvinceCityAreaQuery.exe.config
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\bin\Debug\PCADataBase.mdf
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\bin\Debug\PCADataBase_log.ldf
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\bin\Debug\ProvinceCityAreaQuery.exe
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\bin\Debug\ProvinceCityAreaQuery.pdb
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\obj\Debug\ProvinceCityAreaQuery.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\obj\Debug\ProvinceCityAreaQuery.Form1.resources
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\obj\Debug\ProvinceCityAreaQuery.Properties.Resources.resources
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\obj\Debug\ProvinceCityAreaQuery.csproj.GenerateResource.Cache
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\obj\Debug\ProvinceCityAreaQuery.exe
+E:\c#\programing\ADONET\ProvinceCityAreaQuery\ProvinceCityAreaQuery\obj\Debug\ProvinceCityAreaQuery.pdb
