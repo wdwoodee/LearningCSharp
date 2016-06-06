@@ -9,3 +9,6 @@ E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImport
 E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.exe
 E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.pdb
 E:\c#\programing\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.ImportExportTest.resources
+D:\Github\LearningCSharp\ADONET\ExportImportData\ExportImportData\bin\Debug\ExportImportData.exe.config
+D:\Github\LearningCSharp\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.exe
+D:\Github\LearningCSharp\ADONET\ExportImportData\ExportImportData\obj\Debug\ExportImportData.pdb
