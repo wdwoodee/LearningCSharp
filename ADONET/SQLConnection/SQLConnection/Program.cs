@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Data;
 
 namespace SQLConnection
 {
@@ -113,6 +114,38 @@ namespace SQLConnection
                 }
             }
             
+            #endregion
+
+            #region Encapsulation Test
+
+            #region ExecuteNonQuery
+            //string sql = "insert T_User(UserName,Password) values(@un,@pwd)";
+            //SQLHelper.ExecuteNonQuery(sql, new SqlParameter("un", "tom"), new SqlParameter("pwd", "123456789"));
+            #endregion
+
+            #region ExecuteScalar
+            string sql = "select count(*) from T_User where UserName =@un and password=@pwd";
+            object result = SQLHelper.ExecuteScalar(sql, new SqlParameter("un", "tom"), new SqlParameter("pwd", "123456789"));
+            Console.WriteLine(Convert.ToInt32(result));
+
+            object result2 = SQLHelper.ExecuteScalar("select count(*) from T_User");
+            Console.WriteLine(Convert.ToInt32(result2));
+
+            #endregion
+
+            #region DataSet
+            string sql3 = "select * from T_User";
+            DataSet ds = SQLHelper.ExecuteQueryDataSet(sql3);
+            DataTable dt = ds.Tables[0];
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow row = dt.Rows[i];
+                string name = Convert.ToString(row["UserName"]);
+                string pasd = Convert.ToString(row["UserName"]);
+                Console.WriteLine(string.Format("Name: {0}, Password: {1}",name, pasd));
+            }
+            #endregion
+
             #endregion
 
             Console.ReadKey();
