@@ -1,0 +1,11 @@
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\bin\Debug\StrongDataSet.exe.config
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\bin\Debug\StrongDataSet.mdf
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\bin\Debug\StrongDataSet_log.ldf
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\bin\Debug\StrongDataSet.exe
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\bin\Debug\StrongDataSet.pdb
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\obj\Debug\StrongDataSet.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\obj\Debug\StrongDataSet.Form1.resources
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\obj\Debug\StrongDataSet.Properties.Resources.resources
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\obj\Debug\StrongDataSet.csproj.GenerateResource.Cache
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\obj\Debug\StrongDataSet.exe
+E:\c#\programing\ADONET\SQLConnection\StrongDataSet\obj\Debug\StrongDataSet.pdb

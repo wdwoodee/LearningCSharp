@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConnection", "SQLConnection\SQLConnection.csproj", "{5A5C1C09-406F-44A5-AC5E-337656261A7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongDataSet", "StrongDataSet\StrongDataSet.csproj", "{0357D6A1-B6D7-450B-AFF0-F7A698D2DDD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5A5C1C09-406F-44A5-AC5E-337656261A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A5C1C09-406F-44A5-AC5E-337656261A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A5C1C09-406F-44A5-AC5E-337656261A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0357D6A1-B6D7-450B-AFF0-F7A698D2DDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0357D6A1-B6D7-450B-AFF0-F7A698D2DDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0357D6A1-B6D7-450B-AFF0-F7A698D2DDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0357D6A1-B6D7-450B-AFF0-F7A698D2DDD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
