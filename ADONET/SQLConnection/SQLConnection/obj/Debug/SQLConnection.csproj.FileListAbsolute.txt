@@ -1,7 +1,0 @@
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\bin\Debug\SQLConnection.exe.config
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\bin\Debug\DBTest.mdf
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\bin\Debug\DBTest_log.ldf
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\bin\Debug\SQLConnection.exe
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\bin\Debug\SQLConnection.pdb
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\obj\Debug\SQLConnection.exe
-E:\c#\programing\ADONET\SQLConnection\SQLConnection\obj\Debug\SQLConnection.pdb
