@@ -145,7 +145,6 @@ namespace SQLConnection
                 Console.WriteLine(string.Format("Name: {0}, Password: {1}",name, pasd));
             }
             #endregion
-
             #endregion
 
             Console.ReadKey();
