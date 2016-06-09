@@ -145,6 +145,27 @@ namespace SQLConnection
                 Console.WriteLine(string.Format("Name: {0}, Password: {1}",name, pasd));
             }
             #endregion
+
+            #region SqlCommandBuilder 修改data set回写到数据库中
+            DataSet dataSet = new DataSet();
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = "select * from T_User";
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataSet);
+                    DataTable table = dataSet.Tables[0];
+                    DataRow row = table.Rows[1];
+                    row["UserName"] = "wangdong";
+                    SqlCommandBuilder builder = new SqlCommandBuilder(da);
+                    da.Update(dataSet);//对data set的更新保存在内存中，要提交到数据库
+                }
+            }
+            #endregion
+
             #endregion
 
             Console.ReadKey();
