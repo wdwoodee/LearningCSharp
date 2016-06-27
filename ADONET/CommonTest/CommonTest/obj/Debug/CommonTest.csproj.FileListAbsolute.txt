@@ -1,6 +1,0 @@
-E:\c#\programing\ADONET\CommonTest\CommonTest\bin\Debug\CommonTest.exe.config
-E:\c#\programing\ADONET\CommonTest\CommonTest\bin\Debug\CommonTest.exe
-E:\c#\programing\ADONET\CommonTest\CommonTest\bin\Debug\CommonTest.pdb
-E:\c#\programing\ADONET\CommonTest\CommonTest\obj\Debug\CommonTest.csprojResolveAssemblyReference.cache
-E:\c#\programing\ADONET\CommonTest\CommonTest\obj\Debug\CommonTest.exe
-E:\c#\programing\ADONET\CommonTest\CommonTest\obj\Debug\CommonTest.pdb
