@@ -30,7 +30,6 @@ namespace CommonTest
 
             //Lambda
             IEnumerable < People > results = people.Where(People => People.age > 20); 
-            IEnumerator
         }
     }
     public class People
