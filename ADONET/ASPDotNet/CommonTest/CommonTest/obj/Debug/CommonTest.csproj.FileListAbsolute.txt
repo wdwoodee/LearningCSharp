@@ -1,0 +1,6 @@
+E:\c#\programing\ADONET\ASPDotNet\CommonTest\CommonTest\bin\CommonTest.dll.config
+E:\c#\programing\ADONET\ASPDotNet\CommonTest\CommonTest\bin\CommonTest.dll
+E:\c#\programing\ADONET\ASPDotNet\CommonTest\CommonTest\bin\CommonTest.pdb
+E:\c#\programing\ADONET\ASPDotNet\CommonTest\CommonTest\obj\Debug\CommonTest.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\ASPDotNet\CommonTest\CommonTest\obj\Debug\CommonTest.dll
+E:\c#\programing\ADONET\ASPDotNet\CommonTest\CommonTest\obj\Debug\CommonTest.pdb

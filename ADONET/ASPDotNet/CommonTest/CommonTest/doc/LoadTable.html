@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function loadData() {
+            var data = { "Baidu": "http://www.baidu.com", "Jingdong": "http://www.jd.com", "Xinlang": "http://www.sina.com" }
+            var table = document.getElementById("tableLinks");
+            for (var key in data){
+                var value = data[key];
+                
+                /*
+                var tr = table.insertRow(-1); //FireFox must have value -1
+                var td1 = tr.insertCell(-1);
+                td1.innerText = key;
+
+                var td2 = tr.insertCell(-1);
+                td2.innerHTML = "   <a href='" + value + "'>" + value + "</a>";
+                */
+                
+                var tr = document.createElement("tr");
+                var td1 = document.createElement("td");
+                td1.innerText = key;
+                tr.appendChild(td1);
+
+                var td2 = document.createElement("td");
+                td2.innerHTML = "   <a href='" + value + "'>" + value + "</a>";
+                tr.appendChild(td2);
+
+                table.appendChild(tr);
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="loadtable" onclick="loadData()"/>
+    <table id="tableLinks" border="1"></table>
+</body>
+</html>

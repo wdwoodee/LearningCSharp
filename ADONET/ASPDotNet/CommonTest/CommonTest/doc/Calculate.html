@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculate</title>
+    <script type="text/javascript">
+        function calcClick() {
+            var value1 = document.getElementById("txt1").value;
+            var value2 = document.getElementById("txt2").value;
+            value1 = parseInt(value1);
+            value2 = parseInt(value2);
+            document.getElementById("txtResult").value = value1 + value2;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1"/>    <input type="text" id="txt2" />
+    <input type="button" onclick="calcClick()" value="=" /><input type="text" id="txtResult" readonly="readonly"/>
+</body>
+</html>
