@@ -11,25 +11,36 @@ namespace CommonTest
     {
         static void Main(string[] args)
         {
-            List<People> people = new List<People>();
+            List<People> peoples = new List<People>();
             People p1 = new People(21, "zhangsan");
             People p2 = new People(20, "lisi");
             People p3 = new People(23, "wangwu");
             People p4 = new People(24, "mazi");
             People p5 = new People(25, "shiwan");
             People p6 = new People(18, "baqian");
-            people.Add(p1);
-            people.Add(p2);
-            people.Add(p3);
-            people.Add(p4);
-            people.Add(p5);
-            people.Add(p6);
+            peoples.Add(p1);
+            peoples.Add(p2);
+            peoples.Add(p3);
+            peoples.Add(p4);
+            peoples.Add(p5);
+            peoples.Add(p6);
 
             //匿名方法
-            //IEnumerable<People> results = people.Where(delegate(People p) { return p.age > 20; });
+            //IEnumerable<People> results = peoples.Where(delegate(People p) { return p.age > 20; });
 
             //Lambda
-            IEnumerable < People > results = people.Where(People => People.age > 20); 
+            IEnumerable <People> results = peoples.Where(People => People.age > 20);
+
+            Console.WriteLine("传统的委托代码示例：");
+            LambdaTest.FindListDelegate();
+            Console.Write("\n");
+
+            Console.WriteLine("使用匿名方法的示例：");
+            LambdaTest.FindListAnonymousMethod();
+            Console.Write("\n");
+
+            Console.WriteLine("使用Lambda的示例：");
+            LambdaTest.FindListLambdaExpression();    
         }
     }
     public class People
