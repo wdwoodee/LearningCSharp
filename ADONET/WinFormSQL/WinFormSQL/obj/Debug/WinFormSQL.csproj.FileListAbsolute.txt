@@ -1,0 +1,1 @@
+E:\c#\programing\ADONET\WinFormSQL\WinFormSQL\bin\Debug\WinFormSQL.exe.config
