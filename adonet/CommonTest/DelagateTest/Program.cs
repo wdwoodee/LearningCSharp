@@ -8,7 +8,7 @@ namespace DelagateTest
 {
     //步骤：1、声明一个delegate类型
     public delegate string MyDelegate(string name);
-    class Program
+    public class Program
     {
         //2、定义准备被委托调用的方法
         public static string FunctionA(string name)
@@ -35,6 +35,44 @@ namespace DelagateTest
             MyDelegate b = new MyDelegate(FunctionB);
             MethodA(a);
             MethodA(b);
+
+            TestEvent myEvent = new TestEvent();
+            myEvent.Click += new TestEvent.MyEventHandler(myEvent.M1);
+            myEvent.Click += new TestEvent.MyEventHandler(myEvent.M2);
+            myEvent.Click += new TestEvent.MyEventHandler(myEvent.M3);
+            myEvent.Trigger();
+            myEvent.Click -= new TestEvent.MyEventHandler(myEvent.M3);
+            myEvent.Trigger();
+        }
+    }
+
+    public class TestEvent
+    {
+        //定义事件的签名，为事件定义委托
+        public delegate void MyEventHandler();
+        
+        //用event来声明事件
+        public event MyEventHandler Click;
+        
+        //定义引发该事件时要调用的方法
+        public void Trigger()
+        {
+            Click();
+        }
+
+        public void M1()
+        {
+            Console.WriteLine("Hello from m1");
+        }
+
+        public void M2()
+        {
+            Console.WriteLine("Hello from m2");
+        }
+
+        public void M3()
+        {
+            Console.WriteLine("Hello from m3");
         }
     }
 }
