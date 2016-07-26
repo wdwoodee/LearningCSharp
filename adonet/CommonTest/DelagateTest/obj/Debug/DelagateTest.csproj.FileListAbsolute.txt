@@ -1,6 +1,6 @@
 E:\c#\programing\ADONET\CommonTest\DelagateTest\bin\Debug\DelagateTest.exe.config
 E:\c#\programing\ADONET\CommonTest\DelagateTest\bin\Debug\DelagateTest.exe
 E:\c#\programing\ADONET\CommonTest\DelagateTest\bin\Debug\DelagateTest.pdb
-E:\c#\programing\ADONET\CommonTest\DelagateTest\obj\Debug\DelagateTest.csprojResolveAssemblyReference.cache
 E:\c#\programing\ADONET\CommonTest\DelagateTest\obj\Debug\DelagateTest.exe
 E:\c#\programing\ADONET\CommonTest\DelagateTest\obj\Debug\DelagateTest.pdb
+E:\c#\programing\adonet\commontest\DelagateTest\obj\Debug\DelagateTest.csprojResolveAssemblyReference.cache
