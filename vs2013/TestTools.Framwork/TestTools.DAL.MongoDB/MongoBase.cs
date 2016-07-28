@@ -26,11 +26,11 @@ namespace TestTools.DAL.MongoDB
         protected string mongoDBConnStr = ConfigurationManager.ConnectionStrings["MongoDBStr"].ConnectionString;
         protected MongoServer mongoServer = null;
         protected MongoDatabase mongoDatabase = null;
-        protected string mongoDbName = null;
+        
         #endregion
 
         #region Attribute
-        public string DBName { get { return mongoDbName; } set { mongoDbName = value; } }
+        public string DBName { get; set; }
         public string ConnectionString { get { return mongoDBConnStr; } set { mongoDBConnStr = value; } }
         #endregion
 
@@ -39,7 +39,7 @@ namespace TestTools.DAL.MongoDB
         public MongoBase(string dbname)
         {
             //string connectString = mongoDBConnStr;
-            mongoDbName = dbname;
+            DBName = dbname;
             // Create a MongoClient object by using the connection string
             MongoClient mclient = new MongoClient(ConnectionString);
 
@@ -50,7 +50,7 @@ namespace TestTools.DAL.MongoDB
             mongoServer.Connect();
 
             // Use the server to access the 'test'pupu database
-            mongoDatabase = mongoServer.GetDatabase(mongoDbName);
+            mongoDatabase = mongoServer.GetDatabase(DBName);
         }
         #endregion
 
@@ -362,9 +362,7 @@ namespace TestTools.DAL.MongoDB
         }
 
         #endregion
-
-
-
+        
         #region ExecuteQueryGetObjectList
         /// <summary>
         /// T is your DB object. Such as DBDevice. Query is your mongoquery.
