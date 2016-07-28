@@ -1,0 +1,6 @@
+E:\c#\programing\ADONET\CommonTest\TaskTest\bin\Debug\TaskTest.exe.config
+E:\c#\programing\ADONET\CommonTest\TaskTest\bin\Debug\TaskTest.exe
+E:\c#\programing\ADONET\CommonTest\TaskTest\bin\Debug\TaskTest.pdb
+E:\c#\programing\ADONET\CommonTest\TaskTest\obj\Debug\TaskTest.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\CommonTest\TaskTest\obj\Debug\TaskTest.exe
+E:\c#\programing\ADONET\CommonTest\TaskTest\obj\Debug\TaskTest.pdb
