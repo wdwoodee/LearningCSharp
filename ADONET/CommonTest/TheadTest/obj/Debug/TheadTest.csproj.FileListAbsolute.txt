@@ -1,0 +1,6 @@
+E:\c#\programing\ADONET\CommonTest\TheadTest\bin\Debug\TheadTest.exe.config
+E:\c#\programing\ADONET\CommonTest\TheadTest\bin\Debug\TheadTest.exe
+E:\c#\programing\ADONET\CommonTest\TheadTest\bin\Debug\TheadTest.pdb
+E:\c#\programing\ADONET\CommonTest\TheadTest\obj\Debug\TheadTest.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\CommonTest\TheadTest\obj\Debug\TheadTest.exe
+E:\c#\programing\ADONET\CommonTest\TheadTest\obj\Debug\TheadTest.pdb
