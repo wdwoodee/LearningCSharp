@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TaskTest
@@ -67,32 +68,33 @@ namespace TaskTest
 
             #region ContinueWith
             //ContinueWith 就是在第一个Task完成后自动启动下一个Task，实现Task的延续
-            //var task1 = new Task(() =>
-            //{
-            //    Console.WriteLine("Task 1 Begin");
-            //    System.Threading.Thread.Sleep(2000);
-            //    Console.WriteLine("Task 1 Finish");
-            //});
-            //var task2 = new Task(() =>
-            //{
-            //    Console.WriteLine("Task 2 Begin");
-            //    System.Threading.Thread.Sleep(3000);
-            //    Console.WriteLine("Task 2 Finish");
-            //});
+            var task1 = new Task(() =>
+            {
+                Console.WriteLine("Task 1 Begin");
+                System.Threading.Thread.Sleep(2000);
+                Console.WriteLine("Task 1 Finish");
+            });
+            var task2 = new Task(() =>
+            {
+                Console.WriteLine("Task 2 Begin");
+                System.Threading.Thread.Sleep(3000);
+                Console.WriteLine("Task 2 Finish");
+            });
 
 
-            //task1.Start();
-            //task2.Start();
-            //var result = task1.ContinueWith<string>(task =>
-            //{
-            //    Console.WriteLine("task1 finished!");
-            //    return "This is task result!";
-            //});
+            task1.Start();
+            task2.Start();
+            var result = task1.ContinueWith<string>(task =>
+            {
+                Console.WriteLine(task1.Status);
+                Console.WriteLine("task1 finished!");
+                return "This is task result!";
+            });
 
-            //Console.WriteLine(result.Result.ToString());
+            Console.WriteLine(result.Result.ToString());
             #endregion
 
-            #region 
+            #region
             //在每次调用ContinueWith方法时，每次会把上次Task的引用传入进来，以便检测上次Task的状态，比如我们可以使用上次Task的Result属性来获取返回值。
             //var SendFeedBackTask = Task.Factory.StartNew(() => { Console.WriteLine("Get some Data!"); })
             //                .ContinueWith<bool>(s => { return true; })
@@ -110,10 +112,74 @@ namespace TaskTest
             //Console.WriteLine(SendFeedBackTask.Result);
 
             //其实上面的写法简化一下，可以这样写：
-            Task.Factory.StartNew<string>(() => { return "One"; }).ContinueWith(ss => { Console.WriteLine(ss.Result); });
+            //Task.Factory.StartNew<string>(() => { return "One"; }).ContinueWith(ss => { Console.WriteLine(ss.Result); });
             #endregion
 
+            #region 死锁处理
+            //Task[] tasks = new Task[2];
+            //tasks[0] = Task.Factory.StartNew(() =>
+            //{
+            //    Console.WriteLine("Task 1 Start running...");
+            //    while (true)
+            //    {
+            //        System.Threading.Thread.Sleep(1000);
+            //    }
+            //    Console.WriteLine("Task 1 Finished!");
+            //});
+            //tasks[1] = Task.Factory.StartNew(() =>
+            //{
+            //    Console.WriteLine("Task 2 Start running...");
+            //    System.Threading.Thread.Sleep(2000);
+            //    Console.WriteLine("Task 2 Finished!");
+            //});
 
+            //Task.WaitAll(tasks, 5000);
+            //for (int i = 0; i < tasks.Length; i++)
+            //{
+            //    if (tasks[i].Status != TaskStatus.RanToCompletion)
+            //    {
+            //        Console.WriteLine("Task {0} Error!", i + 1);
+            //    }
+            //}
+            //Console.Read();
+            #endregion
+
+            #region spinlock
+            //SpinLock slock = new SpinLock(false);
+            //long sum1 = 0;
+            //long sum2 = 0;
+            //long sum3 = 0;
+            //Parallel.For(1, 100001, i =>
+            //{
+            //    //Console.WriteLine(i);
+            //    sum1 += i;
+            //    //Console.WriteLine(sum1);
+            //});
+            //for (int i = 1; i < 100001; i++)
+            //{
+            //    sum3 += i;
+            //}
+
+            //Parallel.For(1, 100001, i =>
+            //{
+            //    bool lockTaken = false;
+            //    try
+            //    {
+            //        slock.Enter(ref lockTaken);
+            //        sum2 += i;
+            //    }
+            //    finally
+            //    {
+            //        if (lockTaken)
+            //            slock.Exit(false);
+            //    }
+            //});
+
+            //Console.WriteLine("Num1的值为:{0}", sum1);
+            //Console.WriteLine("Num2的值为:{0}", sum2);
+            //Console.WriteLine("Num3的值为:{0}", sum3);
+
+            #endregion
 
             Console.Read();
         }
