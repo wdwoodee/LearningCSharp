@@ -1,0 +1,6 @@
+E:\c#\programing\ADONET\CommonTest\CalByTask1-100\bin\Debug\CalByTask1-100.exe.config
+E:\c#\programing\ADONET\CommonTest\CalByTask1-100\bin\Debug\CalByTask1-100.exe
+E:\c#\programing\ADONET\CommonTest\CalByTask1-100\bin\Debug\CalByTask1-100.pdb
+E:\c#\programing\ADONET\CommonTest\CalByTask1-100\obj\Debug\CalByTask1-100.csprojResolveAssemblyReference.cache
+E:\c#\programing\ADONET\CommonTest\CalByTask1-100\obj\Debug\CalByTask1-100.exe
+E:\c#\programing\ADONET\CommonTest\CalByTask1-100\obj\Debug\CalByTask1-100.pdb
