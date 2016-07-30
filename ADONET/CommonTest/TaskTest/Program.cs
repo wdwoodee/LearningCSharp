@@ -9,6 +9,7 @@ namespace TaskTest
 {
     class Program
     {
+        public delegate string MyDelegate(object data);
         static void Main(string[] args)
         {
             #region Create Task
@@ -68,30 +69,30 @@ namespace TaskTest
 
             #region ContinueWith
             //ContinueWith 就是在第一个Task完成后自动启动下一个Task，实现Task的延续
-            var task1 = new Task(() =>
-            {
-                Console.WriteLine("Task 1 Begin");
-                System.Threading.Thread.Sleep(2000);
-                Console.WriteLine("Task 1 Finish");
-            });
-            var task2 = new Task(() =>
-            {
-                Console.WriteLine("Task 2 Begin");
-                System.Threading.Thread.Sleep(3000);
-                Console.WriteLine("Task 2 Finish");
-            });
+            //var task1 = new Task(() =>
+            //{
+            //    Console.WriteLine("Task 1 Begin");
+            //    System.Threading.Thread.Sleep(2000);
+            //    Console.WriteLine("Task 1 Finish");
+            //});
+            //var task2 = new Task(() =>
+            //{
+            //    Console.WriteLine("Task 2 Begin");
+            //    System.Threading.Thread.Sleep(3000);
+            //    Console.WriteLine("Task 2 Finish");
+            //});
 
 
-            task1.Start();
-            task2.Start();
-            var result = task1.ContinueWith<string>(task =>
-            {
-                Console.WriteLine(task1.Status);
-                Console.WriteLine("task1 finished!");
-                return "This is task result!";
-            });
+            //task1.Start();
+            //task2.Start();
+            //var result = task1.ContinueWith<string>(task =>
+            //{
+            //    Console.WriteLine(task1.Status);
+            //    Console.WriteLine("task1 finished!");
+            //    return "This is task result!";
+            //});
 
-            Console.WriteLine(result.Result.ToString());
+            //Console.WriteLine(result.Result.ToString());
             #endregion
 
             #region
@@ -181,7 +182,50 @@ namespace TaskTest
 
             #endregion
 
+            #region continuewith
+            //Task<Int32> t = new Task<Int32>(n => Sum((Int32)n), 100);
+            //t.Start();
+            //t.Wait();
+            //Console.WriteLine(t.Result);
+
+            //Task<Int32> t = new Task<Int32>(n => Sum((Int32)n), 1000);
+            //t.Start();
+            ////t.Wait();
+            //var cwt = t.ContinueWith<string>(task => { Console.WriteLine("The result is {0}", t.Result); return "task2 finish"; });
+            //Console.WriteLine(cwt.Result);
+            #endregion
+
+            #region 委托的异步调用：BeginInvoke() 和 EndInvoke()
+            MyDelegate mydelegate = new MyDelegate(TestMethod);
+            IAsyncResult result = mydelegate.BeginInvoke("Thread Param", TestCallback, "Callback Param");
+
+            //异步执行完成
+            string resultstr = mydelegate.EndInvoke(result);
+            #endregion
+
+
             Console.Read();
+        }
+
+        private static Int32 Sum(Int32 n)
+        {
+            Int32 sum = 0;
+            for (; n > 0; --n)
+                checked { sum += n; } //结果太大，抛出异常
+            return sum;
+        }
+
+        //线程函数
+        public static string TestMethod(object data)
+        {
+            string datastr = data as string;
+            return datastr;
+        }
+
+        //异步回调函数
+        public static void TestCallback(IAsyncResult data)
+        {
+            Console.WriteLine(data.AsyncState);
         }
     }
 }
