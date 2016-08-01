@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function iniEvent() {
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++){
+                var input = inputs[i];
+                input.onblur = inputOnBlur; //设置inputOnBlur函数为input元素的onblur事件的响应函数
+            }
+        }
+
+        function inputOnBlur() {//焦点失去的时候进行数据检查
+            //inputOnBlur是onblur的响应函数，而不是被响应函数调用的函数，所以可以用this来取得发生事件控件的对象
+            if (this.value.length <= 0) {
+                this.style.background = 'red';
+            }
+            else {
+                this.style.background = 'white';
+            }
+        }
+    </script>
+</head>
+<body onload="iniEvent()">
+    <input type="text" /> <input type="text" /> <input type="text" /><input type="text" /> <input type="text" /> <input type="text" />
+</body>
+</html>

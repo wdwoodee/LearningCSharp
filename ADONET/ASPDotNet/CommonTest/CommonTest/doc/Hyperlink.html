@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function initEnvent() {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                var element = links[i];
+                element.onclick = linkOnClick;
+            }
+        }
+        function linkOnClick() {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                if (link == this) {
+                    link.style.background = 'red';
+                }
+                else{
+                    link.style.background = 'white';    
+                }
+            }
+            window.event.returnValue = false;//阻止打开超链接
+        }
+    </script>
+</head>
+<body onload="initEnvent()">
+    <a href="http://www.sina.com">新浪</a>
+    <a href="http://www.baidu.com">百度</a>
+    <a href="http://www.jd.com">京东</a>
+    <a href="http://www.taobao.com">淘宝</a>
+</body>
+</html>
