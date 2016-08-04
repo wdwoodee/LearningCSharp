@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function showDetail() {
+            var details = document.getElementById('details');
+            details.style.display = '';
+            details.style.left = window.event.clientX;
+            details.style.top = window.event.clientY;
+        }
+        function hideDetail() {
+            var details = document.getElementById('details');
+            details.style.display = 'none';
+        }
+
+    </script>
+</head>
+<body>
+    <img src="/images/meinvsmall.png" onmousemove="showDetail()"/>
+    <div id="details" style="display:none; position:absolute;">
+        <img src="/images/big.png"/>
+        <p>Height: 160</p>
+        <p>Name: Sarily</p>
+        <p><input type="button" value="Close" onclick="hideDetail()"/></p>
+    </div>
+</body>
+</html>

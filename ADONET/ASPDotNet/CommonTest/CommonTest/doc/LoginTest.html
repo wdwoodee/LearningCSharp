@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function showLogin() {
+            var div = document.getElementById("divLogin");
+            div.style.display = '';
+        }
+        function hideLogin() {
+            var div = document.getElementById("divLogin");
+            div.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript:showLogin()">Login</a>
+    <div style="position:absolute; top:200px; left:200px;border-style:solid; border-color:blue; border-width:thin; display:none;width:280px;height:105px;padding:10px" id="divLogin">
+            <img src="/images/close.jpg" id="clsoeBtn" onclick="hideLogin()" style="float:right"/>   
+            <table style="padding:10px">
+            <tr>
+                <td>
+                    <label for="un">UserName: </label>
+                </td>
+                <td>
+                    <input type="text" id="un" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd">Password: </label>
+                </td>
+                <td>
+                    <input type="password" id="pwd" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

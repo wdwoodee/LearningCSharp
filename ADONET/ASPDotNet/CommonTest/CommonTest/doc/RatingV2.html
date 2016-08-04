@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function indexOf(arr, element) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == element) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        function initEvent() {
+            var tableRating = document.getElementById('tableRating');
+            var tds = tableRating.getElementsByTagName('td');
+            for (var i = 0; i < tds.length; i++) {
+                var td = tds[i];
+                td.style.cursor = 'pointer';
+                td.onmousemove = function () {
+                    var tableRating = document.getElementById('tableRating');
+                    var tds = tableRating.getElementsByTagName('td');
+                    var index = indexOf(tds, this);
+                    if (index != -1) {
+                        for (var i = 0; i <= index; i++) {
+                            tds[i].innerText = '★'
+                        }
+                        for (var i = index + 1; i < tds.length; i++) {
+                            tds[i].innerText = '☆'
+                        }
+                    }
+                };
+                
+            }
+        }
+    </script>
+</head>
+<body onload="initEvent()">
+    <p>评分系统：</p>
+    <table id="tableRating">
+        <tr><td>☆</td><td>☆</td><td>☆</td><td>☆</td><td>☆</td></tr>
+    </table>
+    
+</body>
+</html>

@@ -21,6 +21,17 @@
             link.innerText = "Baidu";
             divmain1.appendChild(link);
         }
+
+        //IE work
+        function create() {
+            var divmain1 = document.getElementById("divMain");
+            var input = document.createElement("<input type='button' value='hello'/>");
+            divmain1.appendChild(input);
+
+            var link = document.createElement("<a href='http://www.baidu.com'></a>");
+            link.innerHTML = "baidu";
+            divmain1.appendChild(link);
+        }
     </script>
 </head>
 <body>
@@ -28,6 +39,7 @@
     <input type="button" value="Click" onclick="btnClick()" />
     <input type="button" value="innerHTML" onclick="createInput()" />
     <input type="button" value="innerText" onclick="createLink()" />
+    <input type="button" value="Create" onclick="create()"/>
     <div id="divMain2">
     </div>
 </body>
