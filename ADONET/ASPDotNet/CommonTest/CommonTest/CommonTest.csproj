@@ -74,6 +74,7 @@
     <Content Include="doc\LoginTest.html" />
     <Content Include="doc\Rating.html" />
     <Content Include="doc\RatingV2.html" />
+    <Content Include="doc\SearchText.html" />
     <Content Include="doc\ValueEmpty.html" />
     <Content Include="images\close.jpg" />
     <Content Include="images\meinvbig.jpg" />

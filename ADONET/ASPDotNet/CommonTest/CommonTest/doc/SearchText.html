@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Search Text Box</title>
+    <script type="text/javascript">
+        function inputBlur(keyword) {
+            if (keyword.value <= 0) {
+                keyword.value = 'Input keyword, ex: abcde';
+                keyword.style.color = 'gray';
+            }
+        }
+        function inputFocus(keyword) {
+            if (keyword.value == 'Input keyword, ex: abcde') {
+                keyword.value = '';
+                keyword.style.color = 'Black';
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onblur="inputBlur(this)" onfocus="inputFocus(this)" id="keyword" value="Input keyword, ex: abcde" style="color:gray"/>
+    <input type="button" value="Search" />
+</body>
+</html>

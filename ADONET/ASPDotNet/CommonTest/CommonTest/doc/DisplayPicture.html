@@ -6,6 +6,7 @@
         function showDetail() {
             var details = document.getElementById('details');
             details.style.display = '';
+            //IE work, other explore is not support
             details.style.left = window.event.clientX;
             details.style.top = window.event.clientY;
         }
