@@ -77,6 +77,8 @@
     <Content Include="doc\Rating.html" />
     <Content Include="doc\RatingV2.html" />
     <Content Include="doc\SearchText.html" />
+    <Content Include="doc\Select.html" />
+    <Content Include="doc\SelectMusic.html" />
     <Content Include="doc\ValueEmpty.html" />
     <Content Include="images\big.png" />
     <Content Include="images\close.jpg" />

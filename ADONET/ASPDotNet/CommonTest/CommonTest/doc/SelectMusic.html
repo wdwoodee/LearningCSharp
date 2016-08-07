@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function selectAll() {
+            var div = document.getElementById('playList');
+            var inputs = div.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].type == "checkbox") {
+                    //inputs[i].checked = "checked";
+                    inputs[i].checked = true;
+                }
+            }
+        }
+        function deSelectAll() {
+            var div = document.getElementById('playList');
+            var inputs = div.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                
+                if (inputs[i].type == "checkbox") {
+                    //inputs[i].checked = "unchecked";
+                    inputs[i].checked = false;
+                }
+            }
+        }
+        function revertSelectAll() {
+            var div = document.getElementById('playList');
+            var inputs = div.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].type == "checkbox") {
+                    inputs[i].checked = !inputs[i].checked;
+                    //if (inputs[i].checked == true) {
+                    //    inputs[i].checked = false;
+                    //}
+                    //else {
+                    //    inputs[i].checked = true;
+                    //}
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="playList">
+        <input type="checkbox" id="p1" /><label for="p1">最天使</label>
+        <input type="checkbox" id="p2" /><label for="p2">狮子座</label>
+        <input type="checkbox" id="p3" /><label for="p3">小朋友</label>
+    </div>
+    <p>
+        <input type="button" value="全选" onclick="selectAll()"/><input type="button" value="全不选" onclick="deSelectAll()" /><input type="button" onclick="revertSelectAll()" value="反选" />
+    </p>
+</body>
+</html>

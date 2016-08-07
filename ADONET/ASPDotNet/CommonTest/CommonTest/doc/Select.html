@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function moveSeleted(selectSrc, selectDest) {
+            //for (var i = 0; i <= selectSrc.childNodes.length; i++) {
+            for (var i = selectSrc.childNodes.length - 1; i >= 0; i--) {
+                var option = selectSrc.childNodes[i];
+                if (option.selected == true)
+                {
+                    selectSrc.removeChild(option);
+                    option.selected = false;
+                    selectDest.appendChild(option);
+                }
+            }
+        }
+        function selectAll(selectSrc, selectDest) {
+            for (var i = selectSrc.childNodes.length - 1; i >= 0; i--) {
+                var option = selectSrc.childNodes[i];
+                option.selected == true;
+                selectSrc.removeChild(option);
+                option.selected = false;
+                selectDest.appendChild(option);
+            }
+        }
+    </script>
+</head>
+<body>
+    <select id="select1" multiple="multiple" style="float:left; width:8%; height:100px">
+        <option>添加</option>
+        <option>删除</option>
+        <option>修改</option>
+        <option>查询</option>
+        <option>打印</option>
+    </select>
+    <div style="float:left;width:5%;height:100px">
+        <input type="button" value=">" onclick="moveSeleted(document.getElementById('select1'), document.getElementById('select2'))" style="float: left; width: 100%;"/>
+        <input type="button" value="<" onclick="moveSeleted(document.getElementById('select2'), document.getElementById('select1'))" style="float:left; width:100%;" />
+        <input type="button" value=">>" onclick="selectAll(document.getElementById('select1'), document.getElementById('select2'))" style="float: left; width: 100%;" />
+        <input type="button" value="<<" onclick="selectAll(document.getElementById('select2'), document.getElementById('select1'))" style="float: left; width: 100%;" />
+    </div>
+    <select id="select2" multiple="multiple" style="float:left; width:8%; height:100px"></select>
+</body>
+</html>
