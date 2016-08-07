@@ -2,8 +2,69 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-</head>
-<body>
+    <script type="text/javascript">
+        /*keycode
+        ascii码说明：
+        8：退格键
+        46：delete
+        37-40：方向键
+        48-57：小键盘数字
+        96-105：主键盘数字
+        110/190：小键盘和主键盘小数点
+        189/109：小键盘和主键盘负号
 
+        13回车
+        9：Tab键
+        */
+        function numonKeyDown() {
+            var k = window.event.keyCode;
+            if (isValidNum(k)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function commafy(n) {
+            var re = /\d{1,3}(?=(\d{3})+$)/g;
+            var n1 = n.replace(/^(\d+)((\.\d+)?)$/, function (s, s1, s2) { return s1.replace(re, "$&,") + s2; });
+            return n1;
+        }
+
+        //replace() 方法的参数 replacement 可以是函数而不是字符串。在这种情况下，每个匹配都调用该函数，它返回的字符串将作为替换文本使用。
+        //该函数的第一个参数是匹配模式的字符串。接下来的参数是与模式中的子表达式匹配的字符串，可以有 0 个或多个这样的参数。接下来的参数是一个整数，
+        //声明了匹配在 stringObject 中出现的位置。最后一个参数是 stringObject 本身。
+        function initEvent() {
+            name = 'aaa bbb ccc';
+            uw = name.replace(/\b\w+\b/g, function (word) {
+                return word.substring(0, 1).toUpperCase() + word.substring(1);
+            }
+              );
+        }
+
+        function isValidNum(k) {
+            return ((k == 9) || (k == 13) || (k == 46) || (k == 8) || (k == 189) || (k == 109) || (k == 190) || (k == 110) || (k >= 48 && k <= 57) || ((k >= 96 && k <= 105)) || (k >= 37 && k <= 40));
+        }
+
+        function numPaste() {
+            var text = clipboardData.getData("Text"); //IE work
+            for (var i = 0; i < text.length; i++){
+                var asc = text.charCodeAt(i); //chaAt -> "3", charCodeAt() 取到的是ASCII码
+                if (!isValidNum(asc)) { //遇到非法值返回false
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="initEvent()">
+    <!--调用函数添加return-->
+    <input type="text" onpaste="return numPaste()" onkeydown="return numonKeyDown()" onblur="    this.value = commafy(this.value); this.style.textAlign = 'right'" onfocus="    this.style.textAlign = 'left'" />
+    <input type="text" onkeydown=" var k = window.event.keyCode;
+    if ((k == 9) || (k == 13) || (k == 46) || (k == 8) || (k == 189) || (k == 109) || (k == 190) || (k == 110) || (k >= 48 && k <= 57) || ((k >= 96 && k <= 105)) || (k >= 37 && k <= 40)) {
+    }
+    else {
+        return false;
+    }"/>
 </body>
 </html>

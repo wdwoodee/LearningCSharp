@@ -70,14 +70,16 @@
     <Content Include="doc\CreateElement.html" />
     <Content Include="doc\DisplayPicture.html" />
     <Content Include="doc\Hyperlink.html" />
+    <Content Include="doc\KeyCode.html" />
     <Content Include="doc\LoadTable.html" />
     <Content Include="doc\LoginTest.html" />
+    <Content Include="doc\ProvinceSelect.html" />
     <Content Include="doc\Rating.html" />
     <Content Include="doc\RatingV2.html" />
     <Content Include="doc\SearchText.html" />
     <Content Include="doc\ValueEmpty.html" />
+    <Content Include="images\big.png" />
     <Content Include="images\close.jpg" />
-    <Content Include="images\meinvbig.jpg" />
     <Content Include="images\meinvsmall.png" />
     <Content Include="Web.config" />
   </ItemGroup>

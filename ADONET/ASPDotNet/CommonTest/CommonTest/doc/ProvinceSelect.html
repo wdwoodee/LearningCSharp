@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>省市选择</title>
+    <script type="text/javascript">
+        var data = { "山东": ["济南", "青岛", "潍坊"], "河南": ["郑州", "洛阳", "新乡"], "辽宁": ["沈阳", "鞍山", "大连"] };
+        function loadEvent() {
+            var prov = document.getElementById("prov");
+            var city = document.getElementById("city");
+            var provname = prov.value;
+            if (provname == 'none') {
+                city.style.display = 'none';
+            }
+            
+            for (var key in data) {
+                var option = document.createElement("option");
+                option.value = key;
+                option.innerText = key;
+                prov.appendChild(option);
+            }
+        }
+
+        function provChange() {
+            var prov = document.getElementById("prov");
+            var city = document.getElementById("city");
+
+            //清除城市列表
+            for (var i = city.childNodes.length - 1; i >= 0; i--) {
+                var option = city.childNodes[i];
+                city.removeChild(option);
+            }
+            var provName = prov.value;
+            if (provName == "none") {
+                city.style.display = 'none';
+                return;
+            }
+            else {
+                city.style.display = '';
+            }
+            var cities = data[provName];
+            for (var i = 0 ; i < cities.length; i++) {
+                var option = document.createElement("option");
+                option.value = cities[i];
+                option.innerText = cities[i];
+                city.appendChild(option);
+            }
+        }
+    </script>
+</head>
+<body onload="loadEvent()">
+    <select id="prov" onchange="provChange()">
+        <option value="none">请选择省</option>
+    </select>
+    <select id="city"></select>
+</body>
+</html>
