@@ -8,7 +8,7 @@
         //$(document).ready(function () { alert("加载完毕2"); })
 
         //简略写法
-        $(function () { alert("加载完毕3"); })
+        //$(function () { alert("加载完毕3"); })
 
         /*
         $(document).ready(myready);
@@ -25,9 +25,44 @@
         //    alert("加载完毕2");
         //}
 
+        var arr = [2, 4, 5];
+        //var arr2 = $.map(arr, function (item) { return item * 2 });
+        //alert(arr2);
+
+        var dict = { "tom": 20, "jerry": 50, "jim": 20 };
+        //$.each(dict, function (key, valule) { alert(key + "'s age is: " + valule); });
+
+        //$.each(arr, function (key, value) { alert(key + "=" + value); });
+
+        //key
+        //$.each(arr, function (item) { alert(item); });
+
+        //this is value
+        //$.each(arr, function () { alert(this); });
+
+        //this is value
+        //$.each(dict, function () { alert(this);});
+
+        //innerHTML
+        //$(function () { alert($("#div1").html()); });
+
+        //dom to jquery object, jquery todom
+        //$(function () { var div1 = document.getElementById('div1'); $(div1).html("<a href='http://www.baidu.com'>Baidu</a>"); var div2 = $(div1)[0]; alert(div2.innerHTML);});
+
+        //common function
+        //$(function () { $("#div1").css("background", "gray"); });
+        //$(function () { alert($("#div1").css("background")); });
+        $(function () { $("#text1").val(new Date()); });
+        $(function () {alert( $("#text1").val()); });
+        $(function () { $("#div1").html("a<font color='red'>b</font>c"); });
+        $(function () { alert($("#div1").html()); });
+        $(function () { alert($("#div1").text()); });
     </script>
 </head>
 <body>
-
+    <div id="div1">
+        Hello<font color="red"> my friend</font>
+    </div>
+    <input type="text" id="text1" />
 </body>
 </html>

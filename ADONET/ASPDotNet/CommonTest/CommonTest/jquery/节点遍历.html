@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //next()方法用于获取当前节点之后挨着的第一个同辈元素
+        $(function () {
+            //$("div").click(function () { alert($(this).next().text()); });
+            //$("div").click(function () { alert($(this).next("p").text()); });
+
+            //nextall获取所有当前节点之后的同辈元素
+            //$("div").click(function () { alert($(this).nextAll().text()); });
+
+            //遍历实现当前节点后的所有div背景色都变成红色
+            //$("div").click(function () { $.each($(this).nextAll("div"), function () { $(this).css("background", "red"); }); });
+            //自动隐式迭代，不用each也可实现
+            //$("div").click(function () { $(this).nextAll("div").css("background", "red"); });
+
+            //获取所有的siblings所有的兄弟节点
+            $("div").click(function () { $(this).css("background", "red"); $(this).siblings("div").css("background", "gray");})
+        });
+    </script>
+</head>
+<body>
+    <div>aa</div>
+    <div>bb</div>
+    <div>cc</div>
+    <p>pp</p>
+    <p>pp2</p>
+    <div>dd</div>
+    <div>ee</div>
+    <div>ff</div>
+</body>
+</html>

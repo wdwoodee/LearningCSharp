@@ -59,6 +59,8 @@
   <ItemGroup>
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <None Include="js\jquery-3.1.0-vsdoc.js" />
+    <Content Include="jquery\JquerySelector.html" />
+    <Content Include="jquery\节点遍历.html" />
     <Content Include="js\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />

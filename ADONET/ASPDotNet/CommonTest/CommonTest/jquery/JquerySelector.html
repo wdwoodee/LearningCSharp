@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+    <script type="text/javascript">
+        //$('p').click(function () { alert{"I'm P"};});//这是dom元素还没有解析出来，所以获取不到$("p")
+
+        //$(function () {
+        //    $("p").click(function () { alert("I'm P");}) //隐式迭代，给所有选择出来的元素增减click事件响应。
+        //});
+
+        //css selector
+        $(function () {
+            $(".warning").click(function () { alert("这是警告信息！");});
+        });
+
+        $(function () {
+            var element = $("#btn1");
+            if (element.length <= 0) {
+                alert("Not found element!");
+                return
+            }
+            element.mouseover(function () { alert("Mouse over事件")});
+        });
+    </script>
+    <style type="text/css">
+        .warning { background-color:yellow;color:red;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="tagname" id="btnClick" />
+    <p>aa</p>
+    <p>123</p>
+    <p>dwww</p>
+    <br />
+    <p>Welcome</p>
+    <div class="warning">请携带证件</div>
+    <p class="warning">请勿触碰</p>
+    <input class="warning" type="button" id="btn1" value="点击" />
+</body>
+</html>
