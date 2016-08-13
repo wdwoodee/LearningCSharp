@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .testitem {
+            background-color:red;
+        }
+    </style>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var link = $("<a href='http://www.baidu.com'>Baidu</a>");
+            $("div:first").append(link);
+        });
+
+        $(function () {
+            var data = { "Baidu": "http://www.baidu.com", "Jingdong": "http://www.jd.com" };
+            $.each(data, function (key, value) {
+                var tr = $("<tr><td>"+key+"</td><td><a href="+value+">"+value+"</a></td></tr>");
+                $("#tableSites").append(tr);
+            });
+        });
+
+        $(function () {
+            $("#removeUL").click(function () {
+                $("ul li.testitem").remove();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+    <div></div>
+    <table id="tableSites"></table>
+    <ul>
+        <li class="testitem">acd</li>
+        <li>bdd</li>
+        <li class="testitem">eee</li>
+        <li>eee</li>
+    </ul>
+
+    <input type="button" value="Delete class name is testitem" id="removeUL"/>
+</body>
+</html>

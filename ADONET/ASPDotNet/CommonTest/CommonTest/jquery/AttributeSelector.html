@@ -6,11 +6,7 @@
     <script type="text/javascript">
         $(function () {
             $("input[type='checkbox']").click(function () {
-                if ($(this).attr("checked")==true) {
-                    count++;
-                }
-                else
-                    count--;
+                selectDisply();
             });
             //alert(count);
             //alert(checked.length);
@@ -31,18 +27,20 @@
                         $(this).attr("checked", true);
                     }
                 });
+                selectDisply();
             });
 
             $("input[value='DeselectAll']").click(function () {
                 $("input[type='checkbox']").each(function () {
                     //if($(this).get(0).checked)
                     //if(($(this).is(":checked")))
-                    if($(this).attr("checked")){
-                        ($(this).removeAttr("checked"));
-                    }
+                    //if($(this).attr("checked")){
+                    //    ($(this).removeAttr("checked"));
+                    //}
                     $(this).attr("checked", false);
                 });
                 //$("input[type='checkbox']:checked").removeAttr("checked");
+                selectDisply();
             });
 
             $("input[value='Revert']").click(function () {
@@ -50,6 +48,7 @@
                     $(this).attr("checked", !$(this).attr("checked"));
                 });
                 //allchk();
+                selectDisply();
             });
         });
         function allchk() {
@@ -66,6 +65,14 @@
                 $("#all").attr("checked", false);
             }
         }
+
+        function selectDisply() {
+            var arr = new Array();
+            $("input[type='checkbox']:checked").each(function (key, value) {
+                arr[key] = $(value).val();
+            });
+            $("#count").text("共选中" + arr.length + "项" + arr.join(","));
+        }
     </script>
 </head>
 <body>
@@ -78,6 +85,5 @@
     <input type="button" value="Revert" />
     <br />
     <label id="count"></label>
-    <label>Selected</label>
 </body>
 </html>

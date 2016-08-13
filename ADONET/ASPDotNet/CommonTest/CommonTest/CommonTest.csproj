@@ -61,8 +61,12 @@
     <None Include="js\jquery-3.1.0-vsdoc.js" />
     <Content Include="images\star-empty.png" />
     <Content Include="images\star-full.png" />
+    <Content Include="jquery\AttributeSelector.html" />
+    <Content Include="jquery\Checkbox.html" />
+    <Content Include="jquery\CreateElement.html" />
     <Content Include="jquery\JquerySelector.html" />
     <Content Include="jquery\SelectFilter.html" />
+    <Content Include="jquery\SelectPrivilege.html" />
     <Content Include="jquery\相对选择器.html" />
     <Content Include="jquery\节点遍历.html" />
     <Content Include="js\jquery-3.1.0.js" />
