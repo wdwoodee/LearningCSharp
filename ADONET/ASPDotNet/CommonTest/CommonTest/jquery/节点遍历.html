@@ -20,6 +20,22 @@
             //获取所有的siblings所有的兄弟节点
             $("div").click(function () { $(this).css("background", "red"); $(this).siblings("div").css("background", "gray");})
         });
+
+        /*
+        $(function () {
+            //ratings>td表示直接子元素 ratings td表示所有其下的td
+            $("#ratings td").html("<img src='../images/star-empty.png' style='height:40px; width:40px'/>")
+            .mouseover(function () { $("#ratings td").html("<img src='../images/star-full.png' style='height:40px; width:40px'/>"); $(this).nextAll().html("<img src='../images/star-empty.png' style='height:40px; width:40px'/>"); });
+            
+        });*/
+
+        $(function () {
+            //ratings>td表示直接子元素 ratings td表示所有其下的td
+            $("#ratings td").html("<img src='../images/star-empty.png' style='height:40px; width:40px'/>")
+            .mouseover(function () { $(this).html("<img src='../images/star-full.png' style='height:40px; width:40px'/>");$(this).siblings().html("<img src='../images/star-full.png' style='height:40px; width:40px'/>"); $(this).nextAll().html("<img src='../images/star-empty.png' style='height:40px; width:40px'/>"); });
+
+        });
+
     </script>
 </head>
 <body>
@@ -31,5 +47,12 @@
     <div>dd</div>
     <div>ee</div>
     <div>ff</div>
+    <br />
+    <label>Rating:</label>
+    <table id="ratings">
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
 </body>
 </html>

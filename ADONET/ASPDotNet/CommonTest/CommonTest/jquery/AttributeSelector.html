@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("input[type='checkbox']").click(function () {
+                if ($(this).attr("checked")==true) {
+                    count++;
+                }
+                else
+                    count--;
+            });
+            //alert(count);
+            //alert(checked.length);
+            //$("input[type='button']").click(function () {
+            $("input[value='显示选中项']").click(function () {
+                var checked = $("input:checked");
+                //遍历checked的value值
+                $.each(checked, function () { alert($(this).val());})
+                
+                //输出选中的条目数
+                $("#count").text(checked.length);
+                //alert($("input:checked").val());
+            });
+
+            $("input[value='SelectAll']").click(function () {
+                $("input[type='checkbox']").each(function () {
+                    if (!$(this).is(":checked")) {
+                        $(this).attr("checked", true);
+                    }
+                });
+            });
+
+            $("input[value='DeselectAll']").click(function () {
+                $("input[type='checkbox']").each(function () {
+                    //if($(this).get(0).checked)
+                    //if(($(this).is(":checked")))
+                    if($(this).attr("checked")){
+                        ($(this).removeAttr("checked"));
+                    }
+                    $(this).attr("checked", false);
+                });
+                //$("input[type='checkbox']:checked").removeAttr("checked");
+            });
+
+            $("input[value='Revert']").click(function () {
+                $("input[type='checkbox']").each(function () {
+                    $(this).attr("checked", !$(this).attr("checked"));
+                });
+                //allchk();
+            });
+        });
+        function allchk() {
+            var chknum = $("input[type='checkbox']").length;//选项总个数 
+            var chk = 0;
+            $("#list :checkbox").each(function () {
+                if ($(this).attr("checked") == true) {
+                    chk++;
+                }
+            });
+            if (chknum == chk) {//全选 
+                $("#all").attr("checked", true);
+            } else {//不全选 
+                $("#all").attr("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" value="baidu" />Baidu<br />
+    <input type="checkbox" value="jingdong" />JingDong<br />
+    <input type="checkbox" value="taobao" />TaoBao<br />
+    <input type="button" value="显示选中项" />
+    <input type="button" value="SelectAll" />
+    <input type="button" value="DeselectAll" />
+    <input type="button" value="Revert" />
+    <br />
+    <label id="count"></label>
+    <label>Selected</label>
+</body>
+</html>

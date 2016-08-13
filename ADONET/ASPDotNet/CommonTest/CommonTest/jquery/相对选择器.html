@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#div1").click(function () {
+                //$("#div1 ul").css("background", "red");
+
+                //第二个参数传递一个jQuery对象，这相对于这个对象为基准进行相对选择
+                $("ul", $(this)).css("background", "red");
+            });
+            $(function () {
+                $("#t1 tr").click(function () {
+                    //this表示当前的tr
+                    $("td", $(this)).css("background", "red");
+                });
+            });
+        });
+        //$(function () {
+        //    $("#div1").click(function () {
+        //        //$("#div1 ul").css("background", "red");
+
+        //        //第二个参数传递一个jQuery对象，这相对于这个对象为基准进行相对选择
+        //        $("ul", $(this)).css("background", "red");
+        //    });
+        //});
+
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <ul>
+            <li>dfsd</li>
+            <li>sfdsdf</li>
+            <li>werfsdfsd</li>
+        </ul>
+        <table id="t1">
+            <tr><td>sdfsd</td><td>dddd</td></tr>
+            <tr><td>sdfsd</td><td>dddd</td></tr>
+            <tr><td>sdfsd</td><td>dddd</td></tr>
+            <tr><td>sdfsd</td><td>dddd</td></tr>
+        </table>
+    </div>
+    <div>
+        <ul>
+            <li>dfsd</li>
+            <li>sfdsdf</li>
+            <li>werfsdfsd</li>
+        </ul>
+    </div>
+</body>
+</html>
