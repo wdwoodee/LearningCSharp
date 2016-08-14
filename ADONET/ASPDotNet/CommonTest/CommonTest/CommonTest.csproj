@@ -62,11 +62,16 @@
     <Content Include="images\star-empty.png" />
     <Content Include="images\star-full.png" />
     <Content Include="jquery\AttributeSelector.html" />
+    <Content Include="jquery\Calculate.html" />
     <Content Include="jquery\Checkbox.html" />
+    <Content Include="jquery\Comment.html" />
     <Content Include="jquery\CreateElement.html" />
     <Content Include="jquery\JquerySelector.html" />
+    <Content Include="jquery\Register.html" />
     <Content Include="jquery\SelectFilter.html" />
     <Content Include="jquery\SelectPrivilege.html" />
+    <Content Include="jquery\文本框非空校验.html" />
+    <Content Include="jquery\球队选择.html" />
     <Content Include="jquery\相对选择器.html" />
     <Content Include="jquery\节点遍历.html" />
     <Content Include="js\jquery-3.1.0.js" />

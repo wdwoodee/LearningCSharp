@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(":text").blur(function () {
+                if ($(this).val().length <= 0) {
+                    $(this).css("background", "red");
+                }
+                else {
+                    $(this).css("background", "white");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" />
+</body>
+</html>

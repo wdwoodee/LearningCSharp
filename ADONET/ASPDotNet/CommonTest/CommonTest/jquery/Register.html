@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var leftSeconds = 10;
+        var intervalId;
+        $(function () {
+            $("#btnReg").attr("disabled", true);
+            intervalId = setInterval("countDown()", 1000);
+        });
+        function countDown() {
+            if (leftSeconds <= 0) {
+                $("#btnReg").val("Agree");
+                $("#btnReg").attr("disabled", false);
+                clearInterval(intervalId);
+                return;
+            }
+            leftSeconds--;
+            $("#btnReg").val("Please read it carefully " + leftSeconds + " second.");
+        }
+    </script>
+</head>
+<body>
+    <textarea>someting you should known:sdfsdfsdfsfs ,......</textarea>
+    <br />
+    <input type="button" id="btnReg" value="Agree" />
+</body>
+</html>

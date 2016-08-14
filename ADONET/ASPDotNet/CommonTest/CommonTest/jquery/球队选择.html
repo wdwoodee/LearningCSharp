@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#ul1 li").mousemove(function () {
+                //$(this).css("background", "red");
+                //$(this).siblings().css("background", "white");
+
+                $(this).css("background", "red").siblings().css("background", "white");
+            }).click(function () {
+                $(this).css("background", "white").appendTo("#ul2");
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul id="ul1" style="float:left;width:30%">
+        <li>中国队</li>
+        <li>日本对</li>
+        <li>美国队</li>
+        <li>韩国队</li>
+        <li>巴西队</li>
+    </ul>
+    <ul id="ul2" style="float:left;width:30%">
+
+    </ul>
+</body>
+</html>
