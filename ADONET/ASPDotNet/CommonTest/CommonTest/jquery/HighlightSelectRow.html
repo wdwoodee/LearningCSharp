@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("table tr").click(function () {
+                $(this).addClass("highlight").siblings().removeClass("highlight");
+            });
+        });
+
+        $(function () {
+            //body *,body下所有的元素
+            $("body *").click(function () {
+                $(this).addClass("highlight").siblings().removeClass("highlight");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .highlight {
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><td>dfsfsf</td><td>sfsfwe</td></tr>
+        <tr><td>dfsfsf</td><td>sfsfwe</td></tr>
+        <tr><td>dfsfsf</td><td>sfsfwe</td></tr>
+        <tr><td>dfsfsf</td><td>sfsfwe</td></tr>
+    </table>
+    <p>dfsdfsdf</p>
+    <div>
+        sdfsdfwert
+    </div>
+    <input type="text" />
+</body>
+</html>

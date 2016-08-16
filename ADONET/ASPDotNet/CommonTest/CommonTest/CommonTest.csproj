@@ -66,8 +66,11 @@
     <Content Include="jquery\Checkbox.html" />
     <Content Include="jquery\Comment.html" />
     <Content Include="jquery\CreateElement.html" />
+    <Content Include="jquery\FilterGray.html" />
+    <Content Include="jquery\HighlightSelectRow.html" />
     <Content Include="jquery\JquerySelector.html" />
     <Content Include="jquery\Register.html" />
+    <Content Include="jquery\SearchBox.html" />
     <Content Include="jquery\SelectFilter.html" />
     <Content Include="jquery\SelectPrivilege.html" />
     <Content Include="jquery\文本框非空校验.html" />

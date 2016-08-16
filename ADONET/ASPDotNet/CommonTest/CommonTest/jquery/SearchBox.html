@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#searchBox").val("请输入关键词").addClass("waiting")
+                .blur(function () {
+                    if ($(this).val() == "") {
+                        $("#searchBox").val("请输入关键词").addClass("waiting");
+                    }
+                })
+                .focus(function () {
+                    if ($("#searchBox").val() == "请输入关键词") {
+                        $("#searchBox").val("").removeClass("waiting");
+                    }
+            });
+        });
+    </script>
+    <style type="text/css">
+        .waiting {
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchBox" />
+</body>
+</html>
