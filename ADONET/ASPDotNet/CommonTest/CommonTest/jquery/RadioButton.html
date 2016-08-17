@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#getVal").click(function () {
+                //alert($(":radio[name='gender']:checked").val());
+                alert($(":radio[name=gender]:checked").val());
+                //alert($("input[name='gender']:checked").val());
+            });
+
+            //设置选中值
+            $("#setVal").click(function () {
+                //先点击了别的，然后再对当前选中项赋值，不work
+                //$("#un").attr("checked", true);
+                $(":radio[name=gender]").val(["Unkown"]);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input name="gender" type="radio" value="Man" />Man<br />
+    <input name="gender" type="radio" value="Women" />Women<br />
+    <input name="gender" id="un" type="radio" value="Unkown" />N/A<br />
+    <input type="button" value="SetValue" id="setVal" />
+    <input type="button" value="GetValue" id="getVal" />
+</body>
+</html>

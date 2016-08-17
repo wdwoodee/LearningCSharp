@@ -69,6 +69,7 @@
     <Content Include="jquery\FilterGray.html" />
     <Content Include="jquery\HighlightSelectRow.html" />
     <Content Include="jquery\JquerySelector.html" />
+    <Content Include="jquery\RadioButton.html" />
     <Content Include="jquery\Register.html" />
     <Content Include="jquery\SearchBox.html" />
     <Content Include="jquery\SelectFilter.html" />
