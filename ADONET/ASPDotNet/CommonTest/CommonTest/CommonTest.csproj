@@ -74,6 +74,7 @@
     <Content Include="jquery\SearchBox.html" />
     <Content Include="jquery\SelectFilter.html" />
     <Content Include="jquery\SelectPrivilege.html" />
+    <Content Include="jquery\事件\Hover.html" />
     <Content Include="jquery\文本框非空校验.html" />
     <Content Include="jquery\球队选择.html" />
     <Content Include="jquery\相对选择器.html" />

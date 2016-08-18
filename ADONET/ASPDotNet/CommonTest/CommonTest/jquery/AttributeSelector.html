@@ -24,7 +24,7 @@
             $("input[value='SelectAll']").click(function () {
                 $("input[type='checkbox']").each(function () {
                     if (!$(this).is(":checked")) {
-                        $(this).attr("checked", true);
+                        $(this).prop("checked", true);
                     }
                 });
                 selectDisply();
@@ -37,15 +37,17 @@
                     //if($(this).attr("checked")){
                     //    ($(this).removeAttr("checked"));
                     //}
-                    $(this).attr("checked", false);
+                    $(this).prop("checked", false);
                 });
                 //$("input[type='checkbox']:checked").removeAttr("checked");
                 selectDisply();
             });
 
             $("input[value='Revert']").click(function () {
-                $("input[type='checkbox']").each(function () {
-                    $(this).attr("checked", !$(this).attr("checked"));
+                //:checkbox是type=checkbox的简写
+                //$("input[type='checkbox']").each(function () {
+                $("input:checkbox").each(function () {
+                    $(this).prop("checked", !$(this).prop("checked"));
                 });
                 //allchk();
                 selectDisply();
@@ -55,14 +57,14 @@
             var chknum = $("input[type='checkbox']").length;//选项总个数 
             var chk = 0;
             $("#list :checkbox").each(function () {
-                if ($(this).attr("checked") == true) {
+                if ($(this).prop("checked") == true) {
                     chk++;
                 }
             });
             if (chknum == chk) {//全选 
-                $("#all").attr("checked", true);
+                $("#all").prop("checked", true);
             } else {//不全选 
-                $("#all").attr("checked", false);
+                $("#all").prop("checked", false);
             }
         }
 

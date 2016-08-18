@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../../js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            /*
+            $("p").mouseenter(function () {
+                $(this).text("Come on baby!");
+            }).mouseleave(function () {
+                $(this).text("Bay you!");
+            });*/
+            $("p").hover(function () { $(this).text("Come on baby!"); }, function () { $(this).text("Bay you!"); });
+        });
+    </script>
+</head>
+<body>
+    <p>Hello World!</p>
+</body>
+</html>

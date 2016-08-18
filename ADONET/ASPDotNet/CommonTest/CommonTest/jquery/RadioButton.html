@@ -13,8 +13,7 @@
 
             //设置选中值
             $("#setVal").click(function () {
-                //先点击了别的，然后再对当前选中项赋值，不work
-                //$("#un").attr("checked", true);
+                //$("#un").prop("checked", true);
                 $(":radio[name=gender]").val(["Unkown"]);
             });
 
