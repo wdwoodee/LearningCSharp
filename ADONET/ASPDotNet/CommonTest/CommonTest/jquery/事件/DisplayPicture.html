@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../../Scripts/jquery-3.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var data = { "../../images/meinvsmall.png": ["../../images/big.png", "160cm", "xiaohua"], "../../images/star-empty.png": ["../../images/star-full.png", "120cm", "star"] };
+
+        //$(function () {
+        //    $.each(data, function (key, val) {
+        //        var smallimg = $("<img src=" + key + "/>");
+        //        smallimg.attr("bigimgpath", val[0]);
+        //        smallimg.attr("bigimgheight", val[1]);
+        //        smallimg.attr("bigimgname", val[2]);
+        //        smallimg.mouseover(function (e) {
+        //            $("#detailImg").attr("src", $(this).attr("bigimgpath"));
+        //            $("#detailHeight").text($(this).attr("bigimgheight"));
+        //            $("#detailName").text($(this).attr("bigimgname"));
+        //            $("#details").css("top", e.pageY).css("left", e.pageX).css("display", "");
+        //        });
+        //        $("body").append(smallimg);
+        //    });
+        //});
+
+        $(function () {
+            var src = "images/big.png";
+            var img = $("<img src=" + src + "/>");
+            $("body").append(img);
+        });
+    </script>
+
+</head>
+<body>
+    <img src="../../images/big.png" />
+    <div id="details" style="display:none; position:absolute;">
+        <img id="detailImg" src="" />
+        <p id="detailHeight"></p>
+        <p id="detailName"></p>
+        <p><input type="button" value="Close" /></p>
+    </div>
+</body>
+</html>
