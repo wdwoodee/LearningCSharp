@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../jquery-ui-1.12.0.custom/jquery-ui.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.1.0.js"></script>
+    <script src="../../jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $("#tabtest").tabs();
+            $("#mydialog").dialog();
+            //$(document).dialog();
+        });
+    </script>
+</head>
+<body>
+    <div id="mydialog">This is jquery ui dialog test!</div>
+    <div id="tabtest">
+        <ul>
+            <li><a href="#tabs-1">UserName</a></li>
+            <li><a href="#tabs-2">UseTimes</a></li>
+        </ul>
+        <div id="tabs-1"><label>UserName:</label><input type="text"/></div>
+        <div id="tabs-2"><label>UseTimes:</label><input type="text" /></div>
+    </div>
+</body>
+</html>

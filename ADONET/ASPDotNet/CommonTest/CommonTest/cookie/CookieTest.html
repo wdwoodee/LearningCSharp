@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-3.1.0.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            //alert($.cookie("username"));
+            //$.cookie("username", "tom");
+            if ($.cookie("UserName")) {
+                $("#username").val($.cookie("UserName"));
+            }
+            $("#btnLogin").click(function () {
+                $.cookie("UserName", $("#username").val());
+                //alert($.cookie("UserName"));
+            });
+            $("#tablecolor td").click(function () {
+                var bgColor = $(this).css("background-color");
+                $("body").css("background-color", bgColor);
+                $.cookie("LastBackColor", bgColor,{expires:1});
+            }).css("cursor", "pointer");
+            var lastcorlor = $.cookie("LastBackColor");
+            if (lastcorlor) {
+                $("body").css("background-color", lastcorlor);
+            }
+            
+        });
+    </script>
+</head>
+<body>
+    <label>UserName:</label><input id="username" type="text"/>
+    <input type="button" value="Login" id="btnLogin"/>
+    <table id="tablecolor">
+        <tr>
+            <td style="background-color:red">红色</td>
+            <td style="background-color: blue">蓝色</td>
+            <td style="background-color: yellow">黄色</td>
+        </tr>
+    </table>
+</body>
+</html>

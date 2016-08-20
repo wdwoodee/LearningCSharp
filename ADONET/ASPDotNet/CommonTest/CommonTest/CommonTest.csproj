@@ -57,10 +57,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="jquery-ui-1.12.0.custom\package.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <None Include="js\jquery-3.1.0-vsdoc.js" />
+    <Content Include="cookie\CookieTest.html" />
     <Content Include="images\star-empty.png" />
     <Content Include="images\star-full.png" />
+    <Content Include="jquery-ui-1.12.0.custom\AUTHORS.txt" />
+    <Content Include="jquery-ui-1.12.0.custom\external\jquery\jquery.js" />
+    <Content Include="jquery-ui-1.12.0.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="jquery-ui-1.12.0.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="jquery-ui-1.12.0.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="jquery-ui-1.12.0.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="jquery-ui-1.12.0.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jquery-ui-1.12.0.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery-ui-1.12.0.custom\index.html" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.css" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.js" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.structure.css" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.structure.min.css" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.theme.css" />
+    <Content Include="jquery-ui-1.12.0.custom\jquery-ui.theme.min.css" />
+    <Content Include="jquery-ui-1.12.0.custom\LICENSE.txt" />
     <Content Include="jquery\AttributeSelector.html" />
     <Content Include="jquery\Calculate.html" />
     <Content Include="jquery\Checkbox.html" />
@@ -69,6 +89,8 @@
     <Content Include="jquery\FilterGray.html" />
     <Content Include="jquery\HighlightSelectRow.html" />
     <Content Include="jquery\JquerySelector.html" />
+    <Content Include="jquery\cartoon\QQTab.html" />
+    <Content Include="jquery\jqueryui\JqueryUITest.html" />
     <Content Include="jquery\RadioButton.html" />
     <Content Include="jquery\Register.html" />
     <Content Include="jquery\SearchBox.html" />
@@ -116,6 +138,7 @@
     <Content Include="images\close.jpg" />
     <Content Include="images\meinvsmall.png" />
     <Content Include="jquery\Ready.html" />
+    <Content Include="Scripts\jquery.cookie.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
