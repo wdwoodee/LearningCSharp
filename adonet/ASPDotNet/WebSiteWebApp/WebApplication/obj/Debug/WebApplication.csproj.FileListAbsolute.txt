@@ -1,6 +1,0 @@
-E:\c#\programing\ADONET\ASPDotNet\WebSiteWebApp\WebApplication\bin\WebApplication.dll.config
-E:\c#\programing\ADONET\ASPDotNet\WebSiteWebApp\WebApplication\bin\WebApplication.dll
-E:\c#\programing\ADONET\ASPDotNet\WebSiteWebApp\WebApplication\bin\WebApplication.pdb
-E:\c#\programing\ADONET\ASPDotNet\WebSiteWebApp\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
-E:\c#\programing\ADONET\ASPDotNet\WebSiteWebApp\WebApplication\obj\Debug\WebApplication.dll
-E:\c#\programing\ADONET\ASPDotNet\WebSiteWebApp\WebApplication\obj\Debug\WebApplication.pdb
