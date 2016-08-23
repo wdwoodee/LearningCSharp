@@ -4,11 +4,9 @@
     <title></title>
 </head>
 <body>
-    <form action="Hello.ashx" method="post">
+    <form>
         <input type="hidden" name="ispostback" value="true" />
-        Name:<input type="text" name="UserName" value="@value" />
-        <input type="submit" value="Login" />
-        @msg
+        <input type="text" name="number" value="@value"/><input type="submit" value="自增" />
     </form>
 </body>
 </html>
