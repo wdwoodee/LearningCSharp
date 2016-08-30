@@ -13,6 +13,6 @@ public partial class SetCookie : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Response.SetCookie(new HttpCookie("color", TextBox1.Text));//客户端浏览器可以通过$.cookie取到，服务端设置cookie
+        Response.SetCookie(new HttpCookie("color", txt.Text));//客户端浏览器可以通过$.cookie取到，服务端设置cookie
     }
 }

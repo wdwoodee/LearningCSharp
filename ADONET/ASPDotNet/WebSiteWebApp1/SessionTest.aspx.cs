@@ -26,6 +26,12 @@ public partial class SessionTest : System.Web.UI.Page
     {
         string sessionId = Request.Cookies["MySessionId"].Value;
         IDictionary<string, object> session = SessionMgr.GetSession(sessionId);
-        dsiplaySession.Text = Convert.ToString(session["服务器端的数据"]) + Convert.ToString(session["name"]);
+        if (session.Count > 0)
+        {
+            dsiplaySession.Text = Convert.ToString(session["服务器端的数据"]) + Convert.ToString(session["name"]);
+        }
+        else
+            dsiplaySession.Text = "None session";
+        
     }
 }
