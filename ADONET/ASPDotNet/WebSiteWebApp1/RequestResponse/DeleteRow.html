@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <!--Form用来实现button submit操作-->
+    <form id="form1" action="DeleteRow.ashx" method="post">
+        <input type="hidden" name="Name" id="Name" />
+        <table>
+            <tr><td>Name</td><td>Age</td><td>Operator</td></tr>
+            <!--<a>标签用来实现超链接删除功能-->
+            <tr><td>tom</td><td>20</td><td><a href="DeleteRow.ashx?Name=tom">Delete</a><input type="button" value="Delete" onclick="document.getElementById('Name').value = 'tom'; document.getElementById('form1').submit();" /></td></tr>
+            <tr><td>jack</td><td>30</td><td><a href="DeleteRow.ashx?Name=jack">Delete</a><input type="button" value="Delete" onclick="document.getElementById('Name').value = 'jack'; document.getElementById('form1').submit();" /></td></tr>
+        </table>
+    </form>
+</body>
+</html>
