@@ -20,13 +20,15 @@ namespace TestTools.DAL.MongoDB
         public CurrConfig()
         {
             strDbName = ConfigurationManager.AppSettings["DBName"];
-            strDtName = "CurrConfig";
+            strDtName = "DeviceDataCurr";
             collectionCurrConfig = new MongoDB(strDbName, strDtName);
         }
         public List<NgCurrConfig> GetAllConfig()
         {
+            IMongoQuery qPartial = Query.EQ("type", "config");
             Dictionary<string, int> dic = new Dictionary<string, int> { { "_id", 1 }, { "devName", 1 }, { "content", 1 } };
-            var config = collectionCurrConfig.ExecuteQueryGetColumnsAll<NgCurrConfig>(dic);
+            //var config = collectionCurrConfig.ExecuteQueryGetColumnsAll<NgCurrConfig>(dic);
+            var config = collectionCurrConfig.ExecuteQueryGetColumns<NgCurrConfig>(qPartial,dic);
             return config;
         }
 
@@ -43,7 +45,7 @@ namespace TestTools.DAL.MongoDB
                     {
                         foreach (var one in onePage)
                         {
-                            string name = one.devName;
+                            string name = one.devNmae;
                             string content = one.content;
                             string strFileName = ConvertFileName.RevertFilenamingrules(name);
                             string filePath = strPath + "\\" + strFileName + ".config";
@@ -76,7 +78,7 @@ namespace TestTools.DAL.MongoDB
                 {
                     foreach (var one in oneGroup)
                     {
-                        string name = one.devName;
+                        string name = one.devNmae;
                         string content = one.content;
                         string strFileName = ConvertFileName.RevertFilenamingrules(name);
                         string filePath = strPath + "\\" + strFileName + ".config";

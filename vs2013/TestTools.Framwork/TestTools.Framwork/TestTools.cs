@@ -69,8 +69,13 @@ namespace TestTools.Framwork
 
             com.SaveDeviceSchemaToCSVFromDB();
 
-            com.SaveDeviceSchmaToCSVFromJsonFile();
+            //com.SaveDeviceSchmaToCSVFromJsonFile();
         }
 
+        [TestMethod]
+        public void MongodbTest() 
+        {
+
+        }
     }
 }

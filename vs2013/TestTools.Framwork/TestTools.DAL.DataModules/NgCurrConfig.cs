@@ -24,8 +24,8 @@ namespace TestTools.DAL.DataModules
         [JsonProperty("devId", NullValueHandling = NullValueHandling.Ignore)]
         public string devId { get; set; }
 
-        [BsonElement("devName")]
-        [JsonProperty("devName", NullValueHandling = NullValueHandling.Ignore)]
-        public string devName { get; set; }
+        [BsonElement("devNmae")]
+        [JsonProperty("devNmae", NullValueHandling = NullValueHandling.Ignore)]
+        public string devNmae { get; set; }
     }
 }

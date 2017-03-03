@@ -23,7 +23,7 @@ namespace TestToos.BLL.Common
             {
                 foreach (NgCurrConfig config in configList)
                 {
-                    strHostName = config.devName;
+                    strHostName = config.devNmae;
                     strContent = config.content;
                     if (strHostName != null)
                     {
