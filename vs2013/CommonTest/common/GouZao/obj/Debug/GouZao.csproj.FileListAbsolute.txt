@@ -1,0 +1,6 @@
+E:\c#\programing\vs2013\CommonTest\common\GouZao\bin\Debug\GouZao.exe.config
+E:\c#\programing\vs2013\CommonTest\common\GouZao\bin\Debug\GouZao.exe
+E:\c#\programing\vs2013\CommonTest\common\GouZao\bin\Debug\GouZao.pdb
+E:\c#\programing\vs2013\CommonTest\common\GouZao\obj\Debug\GouZao.exe
+E:\c#\programing\vs2013\CommonTest\common\GouZao\obj\Debug\GouZao.pdb
+E:\c#\programing\vs2013\CommonTest\common\GouZao\obj\Debug\GouZao.csprojResolveAssemblyReference.cache

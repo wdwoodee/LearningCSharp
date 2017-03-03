@@ -1,0 +1,6 @@
+E:\c#\programing\vs2013\CommonTest\common\common\bin\Debug\common.exe.config
+E:\c#\programing\vs2013\CommonTest\common\common\bin\Debug\common.exe
+E:\c#\programing\vs2013\CommonTest\common\common\bin\Debug\common.pdb
+E:\c#\programing\vs2013\CommonTest\common\common\obj\Debug\common.csprojResolveAssemblyReference.cache
+E:\c#\programing\vs2013\CommonTest\common\common\obj\Debug\common.exe
+E:\c#\programing\vs2013\CommonTest\common\common\obj\Debug\common.pdb

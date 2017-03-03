@@ -38,7 +38,7 @@ public class Hello : IHttpHandler {
         //context.Response.Write(fullpath);
         //读取文件内容
         string content = System.IO.File.ReadAllText(fullpath);
-        content = content.Replace("@valule", name);
+        content = content.Replace("@value", name);
         content = content.Replace("@msg", msg);
         context.Response.Write(content);
         
