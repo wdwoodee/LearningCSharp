@@ -73,102 +73,103 @@ namespace SQLConnection
                 }
             #endregion
 
-            #region executescalar
-            //using (SqlConnection conn = new SqlConnection(connString))
-            //{
-            //    conn.Open();
-            //    using (SqlCommand cmd = conn.CreateCommand())
-            //    {
-            //        cmd.CommandText = "select count(*) from T_User where UserName = '" + userName + "'" + "and Password='" + password + "'";
-            //        int i = Convert.ToInt32(cmd.ExecuteScalar());
-            //        if (i > 0)
-            //        {
-            //            Console.WriteLine("Login sucessfully.");
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("Username or assword is wrong, please check again.");
-            //        }
-            //    }
-            //}
-            #endregion
+                #region executescalar
+                //using (SqlConnection conn = new SqlConnection(connString))
+                //{
+                //    conn.Open();
+                //    using (SqlCommand cmd = conn.CreateCommand())
+                //    {
+                //        cmd.CommandText = "select count(*) from T_User where UserName = '" + userName + "'" + "and Password='" + password + "'";
+                //        int i = Convert.ToInt32(cmd.ExecuteScalar());
+                //        if (i > 0)
+                //        {
+                //            Console.WriteLine("Login sucessfully.");
+                //        }
+                //        else
+                //        {
+                //            Console.WriteLine("Username or assword is wrong, please check again.");
+                //        }
+                //    }
+                //}
+                #endregion
 
-            #region parameter
-            //using (SqlConnection conn = new SqlConnection(connString))
-            //{
-            //    conn.Open();
-            //    using (SqlCommand cmd = conn.CreateCommand())
-            //    {
-            //        cmd.CommandText = "select count(*) from T_User where UserName =@un and password=@pwd";
-            //        cmd.Parameters.Add(new SqlParameter("un", userName));
-            //        cmd.Parameters.Add(new SqlParameter("pwd", password));
-            //        int i = Convert.ToInt32(cmd.ExecuteScalar());
-            //        if (i > 0)
-            //        {
-            //            Console.WriteLine("Login sucessfully.");
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("Username or assword is wrong, please check again.");
-            //        }
-            //    }
-            //}
-            
-            #endregion
+                #region parameter
+                //using (SqlConnection conn = new SqlConnection(connString))
+                //{
+                //    conn.Open();
+                //    using (SqlCommand cmd = conn.CreateCommand())
+                //    {
+                //        cmd.CommandText = "select count(*) from T_User where UserName =@un and password=@pwd";
+                //        cmd.Parameters.Add(new SqlParameter("un", userName));
+                //        cmd.Parameters.Add(new SqlParameter("pwd", password));
+                //        int i = Convert.ToInt32(cmd.ExecuteScalar());
+                //        if (i > 0)
+                //        {
+                //            Console.WriteLine("Login sucessfully.");
+                //        }
+                //        else
+                //        {
+                //            Console.WriteLine("Username or assword is wrong, please check again.");
+                //        }
+                //    }
+                //}
 
-            #region Encapsulation Test
+                #endregion
 
-            #region ExecuteNonQuery
-            //string sql = "insert T_User(UserName,Password) values(@un,@pwd)";
-            //SQLHelper.ExecuteNonQuery(sql, new SqlParameter("un", "tom"), new SqlParameter("pwd", "123456789"));
-            #endregion
+                #region Encapsulation Test
 
-            #region ExecuteScalar
-            //string sql = "select count(*) from T_User where UserName =@un and password=@pwd";
-            //object result = SQLHelper.ExecuteScalar(sql, new SqlParameter("un", "tom"), new SqlParameter("pwd", "123456789"));
-            //Console.WriteLine(Convert.ToInt32(result));
+                #region ExecuteNonQuery
+                //string sql = "insert T_User(UserName,Password) values(@un,@pwd)";
+                //SQLHelper.ExecuteNonQuery(sql, new SqlParameter("un", "tom"), new SqlParameter("pwd", "123456789"));
+                #endregion
 
-            //object result2 = SQLHelper.ExecuteScalar("select count(*) from T_User");
-            //Console.WriteLine(Convert.ToInt32(result2));
+                #region ExecuteScalar
+                //string sql = "select count(*) from T_User where UserName =@un and password=@pwd";
+                //object result = SQLHelper.ExecuteScalar(sql, new SqlParameter("un", "tom"), new SqlParameter("pwd", "123456789"));
+                //Console.WriteLine(Convert.ToInt32(result));
 
-            #endregion
+                //object result2 = SQLHelper.ExecuteScalar("select count(*) from T_User");
+                //Console.WriteLine(Convert.ToInt32(result2));
 
-            #region DataSet
-            //string sql3 = "select * from T_User";
-            //DataSet ds = SQLHelper.ExecuteQueryDataSet(sql3);
-            //DataTable dt = ds.Tables[0];
-            //for (int i = 0; i < dt.Rows.Count; i++)
-            //{
-            //    DataRow row = dt.Rows[i];
-            //    string name = Convert.ToString(row["UserName"]);
-            //    string pasd = Convert.ToString(row["UserName"]);
-            //    Console.WriteLine(string.Format("Name: {0}, Password: {1}",name, pasd));
-            //}
-            #endregion
+                #endregion
 
-            #region SqlCommandBuilder 修改data set回写到数据库中
-            //DataSet dataSet = new DataSet();
-            //using (SqlConnection conn = new SqlConnection(connString))
-            //{
-            //    conn.Open();
-            //    using (SqlCommand cmd = conn.CreateCommand())
-            //    {
-            //        cmd.CommandText = "select * from T_User";
+                #region DataSet
+                //string sql3 = "select * from T_User";
+                //DataSet ds = SQLHelper.ExecuteQueryDataSet(sql3);
+                //DataTable dt = ds.Tables[0];
+                //for (int i = 0; i < dt.Rows.Count; i++)
+                //{
+                //    DataRow row = dt.Rows[i];
+                //    string name = Convert.ToString(row["UserName"]);
+                //    string pasd = Convert.ToString(row["UserName"]);
+                //    Console.WriteLine(string.Format("Name: {0}, Password: {1}",name, pasd));
+                //}
+                #endregion
 
-            //        SqlDataAdapter da = new SqlDataAdapter(cmd);
-            //        da.Fill(dataSet);
-            //        DataTable table = dataSet.Tables[0];
-            //        DataRow row = table.Rows[1];
-            //        row["UserName"] = "wangdong";
-            //        SqlCommandBuilder builder = new SqlCommandBuilder(da);
-            //        da.Update(dataSet);//对data set的更新保存在内存中，要提交到数据库
-            //    }
-            //}
-            #endregion
+                #region SqlCommandBuilder 修改data set回写到数据库中
+                //DataSet dataSet = new DataSet();
+                //using (SqlConnection conn = new SqlConnection(connString))
+                //{
+                //    conn.Open();
+                //    using (SqlCommand cmd = conn.CreateCommand())
+                //    {
+                //        cmd.CommandText = "select * from T_User";
 
-            #endregion
+                //        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //        da.Fill(dataSet);
+                //        DataTable table = dataSet.Tables[0];
+                //        DataRow row = table.Rows[1];
+                //        row["UserName"] = "wangdong";
+                //        SqlCommandBuilder builder = new SqlCommandBuilder(da);
+                //        da.Update(dataSet);//对data set的更新保存在内存中，要提交到数据库
+                //    }
+                //}
+                #endregion
 
-            Console.ReadKey();
+                #endregion
+
+                Console.ReadKey();
+            }
         }
     }
 }
